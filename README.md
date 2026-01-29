@@ -4,7 +4,11 @@
 
 Supplementary data and scripts for "How many are you? Open data and bioinformatics reveal species misidentification and potential introgression in Chordodes (Phylum Nematomorpha)". The same scripts and data have been used for the presentation "Open data for understanding potential issues in species identification in non-model species: a case study with the genus Chordodes (Phylum Nematomorpha, Class Gordioida)", given at the Young Systematists' Forum 2025.
 
-Basically, there are all the scripts used for the study, plus some files useful for re-making the analyses (e.g., the Trinity-derived data) and the mamba settings as txt files. Since some files can be around GBs in size, I could not upload everything. If you need more data, let me know.
+Available also at:
+
+https://zenodo.org/records/18415953
+
+Basically, there are all the scripts used for the study, plus some files useful for re-making the analyses and the mamba settings as txt files. It's only missing the Trinity files (too big), which are on Zenodo. Since some files can be around GBs in size, I could not upload everything. If you need more data, let me know.
 
 Abstract:
 
