@@ -1,0 +1,735 @@
+IQ-TREE 2.2.6 COVID-edition built Dec  8 2023
+
+Input file name: no_outgroup.fas
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 1
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 200 sequences with 352 nucleotide sites
+Number of constant sites: 220 (= 62.5% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 220 (= 62.5% of all sites)
+Number of parsimony informative sites: 113
+Number of distinct site patterns: 107
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: TN+F+I+G4
+
+Rate parameter R:
+
+  A-C: 1.0000
+  A-G: 8.9468
+  A-T: 1.0000
+  C-G: 1.0000
+  C-T: 5.6273
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.285
+  pi(C) = 0.1991
+  pi(G) = 0.1574
+  pi(T) = 0.3585
+
+Rate matrix Q:
+
+  A   -0.9365   0.09483    0.6709    0.1708
+  C    0.1357    -1.172   0.07498     0.961
+  G     1.214   0.09483     -1.48    0.1708
+  T    0.1357    0.5336   0.07498   -0.7443
+
+Model of rate heterogeneity: Invar+Gamma with 4 categories
+Proportion of invariable sites: 0.5458
+Gamma shape alpha: 1.574
+
+ Category  Relative_rate  Proportion
+  0         0              0.5458
+  1         0.5208         0.1136
+  2         1.322          0.1136
+  3         2.322          0.1136
+  4         4.642          0.1136
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -1699.3694 (s.e. 94.7726)
+Unconstrained log-likelihood (without tree): -1125.4394
+Number of free parameters (#branches + #model parameters): 204
+Akaike information criterion (AIC) score: 3806.7389
+Corrected Akaike information criterion (AICc) score: 4375.7185
+Bayesian information criterion (BIC) score: 4594.9196
+
+Total tree length (sum of branch lengths): 1.6970
+Sum of internal branch lengths: 0.8650 (50.9740% of tree length)
+
+WARNING: 54 near-zero internal branches (<0.0028) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon '2lm' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++**2lm
+|
+|           +**ALV
+|        +**| (4)
+|        |  |                                      +--AVX
+|        |  |                                   +**| (16)
+|        |  |                                   |  |              +**JF808194_1_Chordodes_sp__MCC-2010_isolate_JHp01_cytochrome_oxidase_subunit_I__CO1__gene_partial_cds_mitochondrial
+|        |  |                                   |  |           +**| (97)
+|        |  |                                   |  |           |  +**JF808195_1_Chordodes_sp__MCC-2010_isolate_JHp02_cytochrome_oxidase_subunit_I__CO1__gene_partial_cds_mitochondrial
+|        |  |                                   |  |        +--| (32)
+|        |  |                                   |  |        |  |                                                         +**LC782471_1_Chordodes_sp__3-YT-2023_A69_3_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds
+|        |  |                                   |  |        |  |                             +---------------------------| (99)
+|        |  |                                   |  |        |  |                             |                           +**LC782479_1_Chordodes_sp__3-YT-2023_A104_1_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds
+|        |  |                                   |  |        |  +-----------------------------| (100)
+|        |  |                                   |  |        |                                +------------MG257764_chordodes_sp
+|        |  |                                   |  |     +**| (28)
+|        |  |                                   |  |     |  |  +**LC776384_1_Chordodes_formosanus_CF1_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |                                   |  |     |  +**| (77)
+|        |  |                                   |  |     |     +**LC776406_1_Chordodes_formosanus_CF23_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |                                   |  |  +--| (45)
+|        |  |                                   |  |  |  +--LC776388_1_Chordodes_formosanus_CF5_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |                                   |  +--| (42)
+|        |  |                                   |     +--JF808197_1_Chordodes_sp_MCC-2010_isolate_CHSIN_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |  |                                +**| (7)
+|        |  |                                |  |  +--HM044118_1_Chordodes_sp_MCC-2010_isolate_F13_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |  |                                |  +**| (18)
+|        |  |                                |     +--JF808204_1_Chordodes_sp_MCC-2010_isolate_Z05_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |  |                             +**| (8)
+|        |  |                             |  +**HQ322116_1_Chordodes_sp_MCC-2010_isolate_Z04_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |  |                          +--| (36)
+|        |  |                          |  +--ZTW
+|        |  |                       +**| (6)
+|        |  |                       |  |  +**HM044121_1_Chordodes_sp_MCC-2010_isolate_Z01_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |  |                       |  +--| (98)
+|        |  |                       |     +**HM044122_1_Chordodes_sp_MCC-2010_isolate_Z02_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |  |                    +**| (3)
+|        |  |                    |  |        +**HM044105_1_Chordodes_sp_MCC-2010_isolate_D02_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |  |                    |  |     +**| (81)
+|        |  |                    |  |     |  +**KX591950_1_Chordodes_formosanus_isolate_CH11607_cytochrome_oxidase_subunit_I_COI_gene_partial_cds_mitochondrial
+|        |  |                    |  |  +--| (56)
+|        |  |                    |  |  |  |              +**HM044108_1_Chordodes_sp_MCC-2010_isolate_F02_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |  |                    |  |  |  |           +--| (100)
+|        |  |                    |  |  |  |           |  +**HMM
+|        |  |                    |  |  |  |        +**| (16)
+|        |  |                    |  |  |  |        |  |  +**KX591949_1_Chordodes_formosanus_isolate_CH11606_cytochrome_oxidase_subunit_I_COI_gene_partial_cds_mitochondrial
+|        |  |                    |  |  |  |        |  +--| (100)
+|        |  |                    |  |  |  |        |     +**KX591951_1_Chordodes_formosanus_isolate_CH11608_cytochrome_oxidase_subunit_I_COI_gene_partial_cds_mitochondrial
+|        |  |                    |  |  |  |     +**| (19)
+|        |  |                    |  |  |  |     |  +**KTV
+|        |  |                    |  |  |  |  +--| (63)
+|        |  |                    |  |  |  |  |  +--HM044112_1_Chordodes_sp_MCC-2010_isolate_D08_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |  |                    |  |  |  +**| (44)
+|        |  |                    |  |  |     +--JF808205_1_Chordodes_sp_MCC-2010_isolate_CH95102_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |  |                    |  +**| (9)
+|        |  |                    |     |     +**HM044109_1_Chordodes_sp_MCC-2010_isolate_F03_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |  |                    |     |  +**| (90)
+|        |  |                    |     |  |  +**KU509487_1_Chordodes_formosanus_isolate_YF02_cytochrome_oxidase_subunit_I_COI_gene_partial_cds_mitochondrial
+|        |  |                    |     +--| (98)
+|        |  |                    |        +--XBF
+|        |  |                 +**| (4)
+|        |  |                 |  |  +--HM044110_1_Chordodes_sp_MCC-2010_isolate_F04_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |  |                 |  +**| (2)
+|        |  |                 |     |  +**KU509486_1_Chordodes_formosanus_isolate_YF01_cytochrome_oxidase_subunit_I_COI_gene_partial_cds_mitochondrial
+|        |  |                 |     +--| (52)
+|        |  |                 |        |  +**MMN
+|        |  |                 |        +--| (99)
+|        |  |                 |           +**XCL
+|        |  |              +**| (9)
+|        |  |              |  |  +**HM044117_1_Chordodes_sp_MCC-2010_isolate_F11_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |  |              |  +**| (34)
+|        |  |              |     +**HM044123_1_Chordodes_sp_MCC-2010_isolate_S01_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |  |           +**| (13)
+|        |  |           |  |           +--CH413
+|        |  |           |  |        +--| (25)
+|        |  |           |  |        |  |           +**FMW
+|        |  |           |  |        |  |        +--| (99)
+|        |  |           |  |        |  |        |  +**ZHW
+|        |  |           |  |        |  |     +**| (39)
+|        |  |           |  |        |  |     |  +**LC776386_1_Chordodes_formosanus_CF3_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |           |  |        |  |  +--| (50)
+|        |  |           |  |        |  |  |  |  +**LC776385_1_Chordodes_formosanus_CF2_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |           |  |        |  |  |  +**| (70)
+|        |  |           |  |        |  |  |     +**LC776387_1_Chordodes_formosanus_CF4_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |           |  |        |  +**| (34)
+|        |  |           |  |        |     |  +**LC776394_1_Chordodes_formosanus_CF11_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |           |  |        |     +**| (78)
+|        |  |           |  |        |        +**LC776398_1_Chordodes_formosanus_CF15_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |           |  |     +**| (16)
+|        |  |           |  |     |  +--frn
+|        |  |           |  |  +--| (35)
+|        |  |           |  |  |  |           +**JF808198_1_Chordodes_sp__MCC-2010_isolate_JHp03_cytochrome_oxidase_subunit_I__CO1__gene_partial_cds_mitochondrial
+|        |  |           |  |  |  |        +--| (24)
+|        |  |           |  |  |  |        |  |     +**JF808199_1_Chordodes_sp__MCC-2010_isolate_JHp04_cytochrome_oxidase_subunit_I__CO1__gene_partial_cds_mitochondrial
+|        |  |           |  |  |  |        |  |  +--| (22)
+|        |  |           |  |  |  |        |  |  |  |                                                            +--JF808206_1_Chordodes_japonensis_isolate_JTa01_cytochrome_oxidase_subunit_I__CO1__gene_partial_cds_mitochondrial
+|        |  |           |  |  |  |        |  |  |  |                                                         +--| (66)
+|        |  |           |  |  |  |        |  |  |  |                                                         |  +--SRR25249042
+|        |  |           |  |  |  |        |  |  |  |                                                      +**| (46)
+|        |  |           |  |  |  |        |  |  |  |                                                      |  +**LC776432_1_Chordodes_japonensis_CJ20_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |           |  |  |  |        |  |  |  |                                                   +--| (43)
+|        |  |           |  |  |  |        |  |  |  |                                                   |  +**LC776417_1_Chordodes_japonensis_CJ5_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |           |  |  |  |        |  |  |  |                                                +**| (14)
+|        |  |           |  |  |  |        |  |  |  |                                                |  |  +--LC776434_1_Chordodes_japonensis_CJ22_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |           |  |  |  |        |  |  |  |                                                |  +--| (97)
+|        |  |           |  |  |  |        |  |  |  |                                                |     +**LC776446_1_Chordodes_japonensis_CJ34_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |           |  |  |  |        |  |  |  |                                             +**| (5)
+|        |  |           |  |  |  |        |  |  |  |                                             |  |     +**LC776415_1_Chordodes_japonensis_CJ3_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |           |  |  |  |        |  |  |  |                                             |  |  +**| (84)
+|        |  |           |  |  |  |        |  |  |  |                                             |  |  |  +**LC776420_1_Chordodes_japonensis_CJ8_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |           |  |  |  |        |  |  |  |                                             |  +--| (49)
+|        |  |           |  |  |  |        |  |  |  |                                             |     |  +**LC776424_1_Chordodes_japonensis_CJ12_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |           |  |  |  |        |  |  |  |                                             |     +--| (98)
+|        |  |           |  |  |  |        |  |  |  |                                             |        +**LC776426_1_Chordodes_japonensis_CJ14_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |           |  |  |  |        |  |  |  |                                          +**| (2)
+|        |  |           |  |  |  |        |  |  |  |                                          |  |     +**LC776444_1_Chordodes_japonensis_CJ32_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |           |  |  |  |        |  |  |  |                                          |  |  +--| (97)
+|        |  |           |  |  |  |        |  |  |  |                                          |  |  |  +**LC782472_1_Chordodes_sp__1-YT-2023_A72_2_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds
+|        |  |           |  |  |  |        |  |  |  |                                          |  +**| (13)
+|        |  |           |  |  |  |        |  |  |  |                                          |     |  +--LC782476_1_Chordodes_sp__1-YT-2023_A95_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds
+|        |  |           |  |  |  |        |  |  |  |                                          |     +**| (64)
+|        |  |           |  |  |  |        |  |  |  |                                          |        +**LC782481_1_Chordodes_sp__1-YT-2023_A110_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds
+|        |  |           |  |  |  |        |  |  |  |                                       +**| (2)
+|        |  |           |  |  |  |        |  |  |  |                                       |  |  +**LC776413_1_Chordodes_japonensis_CJ1_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |           |  |  |  |        |  |  |  |                                       |  +**| (41)
+|        |  |           |  |  |  |        |  |  |  |                                       |     +**LC776414_1_Chordodes_japonensis_CJ2_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |           |  |  |  |        |  |  |  |                                    +**| (1)
+|        |  |           |  |  |  |        |  |  |  |                                    |  |     +**LC782470_1_Chordodes_sp__1-YT-2023_A65_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds
+|        |  |           |  |  |  |        |  |  |  |                                    |  |  +--| (97)
+|        |  |           |  |  |  |        |  |  |  |                                    |  |  |  +**LC782478_1_Chordodes_sp__1-YT-2023_A97_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds
+|        |  |           |  |  |  |        |  |  |  |                                    |  +**| (13)
+|        |  |           |  |  |  |        |  |  |  |                                    |     +--LC782473_1_Chordodes_sp__1-YT-2023_A72_3_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds
+|        |  |           |  |  |  |        |  |  |  |                                 +--| (15)
+|        |  |           |  |  |  |        |  |  |  |                                 |  +--SRR25249040
+|        |  |           |  |  |  |        |  |  |  |                              +**| (8)
+|        |  |           |  |  |  |        |  |  |  |                              |  +--SRR25249043
+|        |  |           |  |  |  |        |  |  |  |                           +**| (1)
+|        |  |           |  |  |  |        |  |  |  |                           |  |  +--LC776447_1_Chordodes_japonensis_CJ35_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |           |  |  |  |        |  |  |  |                           |  +**| (14)
+|        |  |           |  |  |  |        |  |  |  |                           |     +--SRR25249027
+|        |  |           |  |  |  |        |  |  |  |                        +**| (4)
+|        |  |           |  |  |  |        |  |  |  |                        |  |  +**LC776421_1_Chordodes_japonensis_CJ9_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |           |  |  |  |        |  |  |  |                        |  +**| (33)
+|        |  |           |  |  |  |        |  |  |  |                        |     +**LC776427_1_Chordodes_japonensis_CJ15_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |           |  |  |  |        |  |  |  |                     +--| (42)
+|        |  |           |  |  |  |        |  |  |  |                     |  +--SRR25249041
+|        |  |           |  |  |  |        |  |  |  |                  +--| (63)
+|        |  |           |  |  |  |        |  |  |  |                  |  |  +**LC776429_1_Chordodes_japonensis_CJ17_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |           |  |  |  |        |  |  |  |                  |  +**| (49)
+|        |  |           |  |  |  |        |  |  |  |                  |     +--LC776433_1_Chordodes_japonensis_CJ21_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |           |  |  |  |        |  |  |  +------------------| (97)
+|        |  |           |  |  |  |        |  |  |                     +**LC776435_1_Chordodes_japonensis_CJ23_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |           |  |  |  |        |  +**| (20)
+|        |  |           |  |  |  |        |     +--LC776403_1_Chordodes_formosanus_CF20_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |           |  |  |  |     +--| (24)
+|        |  |           |  |  |  |     |  |  +--JF808200_1_Chordodes_sp__MCC-2010_isolate_JHp08_cytochrome_oxidase_subunit_I__CO1__gene_partial_cds_mitochondrial
+|        |  |           |  |  |  |     |  +**| (68)
+|        |  |           |  |  |  |     |     |  +**LC776392_1_Chordodes_formosanus_CF9_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |           |  |  |  |     |     +--| (99)
+|        |  |           |  |  |  |     |        +**LC776399_1_Chordodes_formosanus_CF16_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |           |  |  |  |  +**| (19)
+|        |  |           |  |  |  |  |  +**JF808201_1_Chordodes_sp__MCC-2010_isolate_JHp06_cytochrome_oxidase_subunit_I__CO1__gene_partial_cds_mitochondrial
+|        |  |           |  |  |  +--| (24)
+|        |  |           |  |  |     +--JF808202_1_Chordodes_sp__MCC-2010_isolate_JHp07_cytochrome_oxidase_subunit_I__CO1__gene_partial_cds_mitochondrial
+|        |  |           |  +**| (9)
+|        |  |           |     +--HM044113_1_Chordodes_sp_MCC-2010_isolate_D03_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |  |        +--| (48)
+|        |  |        |  |  +**ccw
+|        |  |        |  +--| (99)
+|        |  |        |     +**CFHF_01
+|        |  |     +**| (6)
+|        |  |     |  |  +**HM044125_1_Chordodes_sp_MCC-2010_isolate_F07_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |  |     |  +--| (99)
+|        |  |     |     +**JF808203_1_Chordodes_sp_MCC-2010_isolate_CH95101_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |  |  +**| (4)
+|        |  |  |  |     +**BRK
+|        |  |  |  |  +--| (98)
+|        |  |  |  |  |  +--LOG
+|        |  |  |  +**| (7)
+|        |  |  |     |     +**GIW_consensus
+|        |  |  |     |  +--| (100)
+|        |  |  |     |  |  +**HM044128_1_Chordodes_sp_MCC-2010_isolate_F10_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |  |  |     +--| (99)
+|        |  |  |        |  +**HM044114_1_Chordodes_sp_MCC-2010_isolate_D04_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |  |  |        +**| (84)
+|        |  |  |           +**KX591953_1_Chordodes_formosanus_isolate_Ac26216_cytochrome_oxidase_subunit_I_COI_gene_partial_cds_mitochondrial
+|        |  +**| (2)
+|        |     +**BDSN
+|     +**| (6)
+|     |  |  +--HM044111_1_Chordodes_sp_MCC-2010_isolate_F12_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|     |  +**| (15)
+|     |     +--MP_04
+|  +--| (74)
+|  |  |  +**DGL_L
+|  |  +--| (99)
+|  |     +**HM044106_1_Chordodes_sp_MCC-2010_isolate_F01_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
++--| (97)
+|  +--HM044120_1_Chordodes_sp_MCC-2010_isolate_F05_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|
++**L1S
+
+Tree in newick format:
+
+(2lm:0.0000024128,((((ALV:0.0000010304,(((((((((((((AVX:0.0058186153,(((((JF808194_1_Chordodes_sp__MCC-2010_isolate_JHp01_cytochrome_oxidase_subunit_I__CO1__gene_partial_cds_mitochondrial:0.0000010304,JF808195_1_Chordodes_sp__MCC-2010_isolate_JHp02_cytochrome_oxidase_subunit_I__CO1__gene_partial_cds_mitochondrial:0.0000010304)97:0.0000026259,((LC782471_1_Chordodes_sp__3-YT-2023_A69_3_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds:0.0000010304,LC782479_1_Chordodes_sp__3-YT-2023_A104_1_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds:0.0000010304)99:0.4365602575,MG257764_chordodes_sp:0.2023859031)100:0.4704465192)32:0.0029087130,(LC776384_1_Chordodes_formosanus_CF1_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000010304,LC776406_1_Chordodes_formosanus_CF23_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000010304)77:0.0000010304)28:0.0000021067,LC776388_1_Chordodes_formosanus_CF5_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0029015923)45:0.0029132506,JF808197_1_Chordodes_sp_MCC-2010_isolate_CHSIN_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0029874161)42:0.0028706992)16:0.0000020534,(HM044118_1_Chordodes_sp_MCC-2010_isolate_F13_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0028824057,JF808204_1_Chordodes_sp_MCC-2010_isolate_Z05_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0058345935)18:0.0000023512)7:0.0000010304,HQ322116_1_Chordodes_sp_MCC-2010_isolate_Z04_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0000010304)8:0.0000010304,ZTW:0.0028769223)36:0.0028669787,(HM044121_1_Chordodes_sp_MCC-2010_isolate_Z01_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0000010304,HM044122_1_Chordodes_sp_MCC-2010_isolate_Z02_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0000010304)98:0.0028678464)6:0.0000023592,(((HM044105_1_Chordodes_sp_MCC-2010_isolate_D02_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0000010304,KX591950_1_Chordodes_formosanus_isolate_CH11607_cytochrome_oxidase_subunit_I_COI_gene_partial_cds_mitochondrial:0.0000010304)81:0.0000010304,(((((HM044108_1_Chordodes_sp_MCC-2010_isolate_F02_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0000020968,HMM:0.0000024840)100:0.0028658070,(KX591949_1_Chordodes_formosanus_isolate_CH11606_cytochrome_oxidase_subunit_I_COI_gene_partial_cds_mitochondrial:0.0000023123,KX591951_1_Chordodes_formosanus_isolate_CH11608_cytochrome_oxidase_subunit_I_COI_gene_partial_cds_mitochondrial:0.0000023194)100:0.0028764775)16:0.0000023611,KTV:0.0000010304)19:0.0000022049,HM044112_1_Chordodes_sp_MCC-2010_isolate_D08_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0028778430)63:0.0028588757,JF808205_1_Chordodes_sp_MCC-2010_isolate_CH95102_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0115823000)44:0.0000023992)56:0.0028553658,((HM044109_1_Chordodes_sp_MCC-2010_isolate_F03_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0000010304,KU509487_1_Chordodes_formosanus_isolate_YF02_cytochrome_oxidase_subunit_I_COI_gene_partial_cds_mitochondrial:0.0000010304)90:0.0000023751,XBF:0.0028683378)98:0.0028677320)9:0.0000023333)3:0.0000023611,(HM044110_1_Chordodes_sp_MCC-2010_isolate_F04_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0028699393,(KU509486_1_Chordodes_formosanus_isolate_YF01_cytochrome_oxidase_subunit_I_COI_gene_partial_cds_mitochondrial:0.0000022586,(MMN:0.0000010304,XCL:0.0000010304)99:0.0058416069)52:0.0028679662)2:0.0000023025)4:0.0000010304,(HM044117_1_Chordodes_sp_MCC-2010_isolate_F11_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0000010304,HM044123_1_Chordodes_sp_MCC-2010_isolate_S01_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0000010304)34:0.0000010304)9:0.0000023354,((((CH413:0.0212243296,((((FMW:0.0000023865,ZHW:0.0000023951)99:0.0058477289,LC776386_1_Chordodes_formosanus_CF3_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0014538966)39:0.0014650461,(LC776385_1_Chordodes_formosanus_CF2_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000010304,LC776387_1_Chordodes_formosanus_CF4_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000010304)70:0.0000021551)50:0.0028653532,(LC776394_1_Chordodes_formosanus_CF11_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000010304,LC776398_1_Chordodes_formosanus_CF15_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000010304)78:0.0000021884)34:0.0000029320)25:0.0028694547,frn:0.0028873655)16:0.0000022056,((((JF808198_1_Chordodes_sp__MCC-2010_isolate_JHp03_cytochrome_oxidase_subunit_I__CO1__gene_partial_cds_mitochondrial:0.0000020344,((JF808199_1_Chordodes_sp__MCC-2010_isolate_JHp04_cytochrome_oxidase_subunit_I__CO1__gene_partial_cds_mitochondrial:0.0000022807,(((((((((((((((JF808206_1_Chordodes_japonensis_isolate_JTa01_cytochrome_oxidase_subunit_I__CO1__gene_partial_cds_mitochondrial:0.0061111259,SRR25249042:0.0030477305)66:0.0029689339,LC776432_1_Chordodes_japonensis_CJ20_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000010304)46:0.0000024308,LC776417_1_Chordodes_japonensis_CJ5_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000024496)43:0.0030148923,(LC776434_1_Chordodes_japonensis_CJ22_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0029754244,LC776446_1_Chordodes_japonensis_CJ34_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000023733)97:0.0029883563)14:0.0000024443,((LC776415_1_Chordodes_japonensis_CJ3_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000010304,LC776420_1_Chordodes_japonensis_CJ8_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000010304)84:0.0000027093,(LC776424_1_Chordodes_japonensis_CJ12_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000021828,LC776426_1_Chordodes_japonensis_CJ14_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000021421)98:0.0030114923)49:0.0030002751)5:0.0000024358,((LC776444_1_Chordodes_japonensis_CJ32_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000010304,LC782472_1_Chordodes_sp__1-YT-2023_A72_2_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds:0.0000010304)97:0.0030150812,(LC782476_1_Chordodes_sp__1-YT-2023_A95_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds:0.0030002359,LC782481_1_Chordodes_sp__1-YT-2023_A110_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds:0.0000010304)64:0.0000025336)13:0.0000024368)2:0.0000024012,(LC776413_1_Chordodes_japonensis_CJ1_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000023857,LC776414_1_Chordodes_japonensis_CJ2_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000010304)41:0.0000024436)2:0.0000023970,((LC782470_1_Chordodes_sp__1-YT-2023_A65_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds:0.0000010304,LC782478_1_Chordodes_sp__1-YT-2023_A97_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds:0.0000010304)97:0.0060383479,LC782473_1_Chordodes_sp__1-YT-2023_A72_3_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds:0.0030148135)13:0.0000022428)1:0.0000025252,SRR25249040:0.0030050018)15:0.0030059556,SRR25249043:0.0030179349)8:0.0000024414,(LC776447_1_Chordodes_japonensis_CJ35_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0030100442,SRR25249027:0.0030072925)14:0.0000024733)1:0.0000025084,(LC776421_1_Chordodes_japonensis_CJ9_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000010304,LC776427_1_Chordodes_japonensis_CJ15_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000010304)33:0.0000010304)4:0.0000010304,SRR25249041:0.0030206886)42:0.0030247557,(LC776429_1_Chordodes_japonensis_CJ17_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000020116,LC776433_1_Chordodes_japonensis_CJ21_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0030534453)49:0.0000020072)63:0.0061157246,LC776435_1_Chordodes_japonensis_CJ23_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000025032)97:0.3083273546)22:0.0028861115,LC776403_1_Chordodes_formosanus_CF20_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0086976890)20:0.0000024151)24:0.0029058793,(JF808200_1_Chordodes_sp__MCC-2010_isolate_JHp08_cytochrome_oxidase_subunit_I__CO1__gene_partial_cds_mitochondrial:0.0058359141,(LC776392_1_Chordodes_formosanus_CF9_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000010304,LC776399_1_Chordodes_formosanus_CF16_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000010304)99:0.0058646932)68:0.0000029878)24:0.0029019537,JF808201_1_Chordodes_sp__MCC-2010_isolate_JHp06_cytochrome_oxidase_subunit_I__CO1__gene_partial_cds_mitochondrial:0.0000028764)19:0.0000022928,JF808202_1_Chordodes_sp__MCC-2010_isolate_JHp07_cytochrome_oxidase_subunit_I__CO1__gene_partial_cds_mitochondrial:0.0058227427)24:0.0028710383)35:0.0028712543,HM044113_1_Chordodes_sp_MCC-2010_isolate_D03_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0028674185)9:0.0000023974)13:0.0000024172,(ccw:0.0000022740,CFHF_01:0.0000010304)99:0.0028720348)48:0.0028725589,(HM044125_1_Chordodes_sp_MCC-2010_isolate_F07_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0000010304,JF808203_1_Chordodes_sp_MCC-2010_isolate_CH95101_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0000010304)99:0.0028774412)6:0.0000023559,((BRK:0.0000024441,LOG:0.0058579945)98:0.0058400484,((GIW_consensus:0.0000010304,HM044128_1_Chordodes_sp_MCC-2010_isolate_F10_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0000010304)100:0.0028729003,(HM044114_1_Chordodes_sp_MCC-2010_isolate_D04_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0000010304,KX591953_1_Chordodes_formosanus_isolate_Ac26216_cytochrome_oxidase_subunit_I_COI_gene_partial_cds_mitochondrial:0.0000010304)84:0.0000022065)99:0.0028769529)7:0.0000023686)4:0.0000010304,BDSN:0.0000010304)2:0.0000023688)4:0.0000010304,(HM044111_1_Chordodes_sp_MCC-2010_isolate_F12_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0028928541,MP_04:0.0028910798)15:0.0000010304)6:0.0000023423,(DGL_L:0.0000010304,HM044106_1_Chordodes_sp_MCC-2010_isolate_F01_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0000010304)99:0.0028853005)74:0.0028836904,HM044120_1_Chordodes_sp_MCC-2010_isolate_F05_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0029629629)97:0.0029110244,L1S:0.0000024246);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -1701.932314
+Robinson-Foulds distance between ML tree and consensus tree: 72
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--2lm
+|
+|                                                              +**ALV
+|                                                           +**|
+|                                                           |  +**MPW
+|                                                        +**|
+|                                                        |  +**HM044124_1_Chordodes_sp_MCC-2010_isolate_F06_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|                                                     +**|
+|                                                     |  +**CAS
+|                                                  +**|
+|                                                  |  +**HM044104_1_Chordodes_sp_MCC-2010_isolate_D01_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|                                               +**|
+|                                               |  +**CH116
+|                                            +**|
+|                                            |  +**KU509485_1_Chordodes_formosanus_isolate_YM02_cytochrome_oxidase_subunit_I_COI_gene_partial_cds_mitochondrial
+|                                         +**|
+|                                         |  +**FLAC
+|                                      +**|
+|                                      |  +**BLM
+|                                   +**|
+|                                   |  +**MCCH_02
+|                                +**|
+|                                |  +**HM044119_1_Chordodes_sp_MCC-2010_isolate_D07_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|                             +**|
+|                             |  +**HQ322115_1_Chordodes_sp_MCC-2010_isolate_Z03_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|                          +**|
+|                          |  +**MCCH_01
+|                       +**|
+|                       |  +**HM044107_1_Chordodes_sp_MCC-2010_isolate_T01_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|                    +**|
+|                    |  +**HM044116_1_Chordodes_sp_MCC-2010_isolate_D06_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|                 +**|
+|                 |  +**HM044115_1_Chordodes_sp_MCC-2010_isolate_D05_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|              +--|
+|              |  +**KX591952_1_Chordodes_formosanus_isolate_CH26207_cytochrome_oxidase_subunit_I_COI_gene_partial_cds_mitochondrial
+|           +--| (30)
+|           |  +--BDSN
+|        +--| (4)
+|        |  |                          +--AVX
+|        |  |                       +--| (30)
+|        |  |                       |  |  +--HQ322116_1_Chordodes_sp_MCC-2010_isolate_Z04_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |  |                       |  +--| (19)
+|        |  |                       |     |  +--JF808204_1_Chordodes_sp_MCC-2010_isolate_Z05_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |  |                       |     +--| (19)
+|        |  |                       |        +--ZTW
+|        |  |                    +--| (14)
+|        |  |                    |  +--HM044118_1_Chordodes_sp_MCC-2010_isolate_F13_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |  |                 +--| (36)
+|        |  |                 |  |                                                        +**JF808194_1_Chordodes_sp__MCC-2010_isolate_JHp01_cytochrome_oxidase_subunit_I__CO1__gene_partial_cds_mitochondrial
+|        |  |                 |  |                                                     +**|
+|        |  |                 |  |                                                     |  +**SRR25249025
+|        |  |                 |  |                                                  +**|
+|        |  |                 |  |                                                  |  +**SRR25249037
+|        |  |                 |  |                                               +**|
+|        |  |                 |  |                                               |  +**LC782483_1_Chordodes_sp__2-YT-2023_A68_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds
+|        |  |                 |  |                                            +**|
+|        |  |                 |  |                                            |  +**SRR25249036
+|        |  |                 |  |                                         +**|
+|        |  |                 |  |                                         |  +**LC776396_1_Chordodes_formosanus_CF13_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |                 |  |                                      +**|
+|        |  |                 |  |                                      |  +**SRR25249030
+|        |  |                 |  |                                   +**|
+|        |  |                 |  |                                   |  +**LC776405_1_Chordodes_formosanus_CF22_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |                 |  |                                +**|
+|        |  |                 |  |                                |  +**JF808196_1_Chordodes_sp__MCC-2010_isolate_JHp05_cytochrome_oxidase_subunit_I__CO1__gene_partial_cds_mitochondrial
+|        |  |                 |  |                             +**|
+|        |  |                 |  |                             |  +**SRR25249026
+|        |  |                 |  |                          +**|
+|        |  |                 |  |                          |  +**SRR25249038
+|        |  |                 |  |                       +**|
+|        |  |                 |  |                       |  +**LC776393_1_Chordodes_formosanus_CF10_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |                 |  |                    +**|
+|        |  |                 |  |                    |  +**SRR25249028
+|        |  |                 |  |                 +**|
+|        |  |                 |  |                 |  +**LC776407_1_Chordodes_formosanus_CF24_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |                 |  |              +--|
+|        |  |                 |  |              |  +**SRR25249034
+|        |  |                 |  |           +--| (97)
+|        |  |                 |  |           |  +--JF808195_1_Chordodes_sp__MCC-2010_isolate_JHp02_cytochrome_oxidase_subunit_I__CO1__gene_partial_cds_mitochondrial
+|        |  |                 |  |        +--| (34)
+|        |  |                 |  |        |  |                             +**LC776384_1_Chordodes_formosanus_CF1_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |                 |  |        |  |                          +**|
+|        |  |                 |  |        |  |                          |  +**LC776458_1_Chordodes_formosanus_P10_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |                 |  |        |  |                       +**|
+|        |  |                 |  |        |  |                       |  +**LC776452_1_Chordodes_formosanus_P4_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |                 |  |        |  |                    +**|
+|        |  |                 |  |        |  |                    |  +**LC776451_1_Chordodes_formosanus_P3_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |                 |  |        |  |                 +**|
+|        |  |                 |  |        |  |                 |  +**LC776456_1_Chordodes_formosanus_P8_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |                 |  |        |  |              +**|
+|        |  |                 |  |        |  |              |  +**LC776450_1_Chordodes_formosanus_P2_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |                 |  |        |  |           +**|
+|        |  |                 |  |        |  |           |  +**LC776453_1_Chordodes_formosanus_P5_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |                 |  |        |  |        +**|
+|        |  |                 |  |        |  |        |  +**LC776449_1_Chordodes_formosanus_P1_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |                 |  |        |  |     +**|
+|        |  |                 |  |        |  |     |  +**LC776454_1_Chordodes_formosanus_P6_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |                 |  |        |  |  +--|
+|        |  |                 |  |        |  |  |  +**LC776411_1_Chordodes_formosanus_CF28_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |                 |  |        |  +--| (77)
+|        |  |                 |  |        |     +--LC776406_1_Chordodes_formosanus_CF23_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |                 |  |     +--| (37)
+|        |  |                 |  |     |  +--LC776388_1_Chordodes_formosanus_CF5_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |                 |  |  +--| (45)
+|        |  |                 |  |  |  |                                                                  +**LC782471_1_Chordodes_sp__3-YT-2023_A69_3_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds
+|        |  |                 |  |  |  |                                                               +**|
+|        |  |                 |  |  |  |                                                               |  +**LC782486_1_Chordodes_sp__3-YT-2023_A104_3_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds
+|        |  |                 |  |  |  |                                                            +**|
+|        |  |                 |  |  |  |                                                            |  +**LC782485_1_Chordodes_sp__3-YT-2023_A92_1_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds
+|        |  |                 |  |  |  |                                                         +--|
+|        |  |                 |  |  |  |                                                         |  +**LC782482_1_Chordodes_sp__3-YT-2023_A114_1_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds
+|        |  |                 |  |  |  |                              +--------------------------| (99)
+|        |  |                 |  |  |  |                              |                          +--LC782479_1_Chordodes_sp__3-YT-2023_A104_1_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds
+|        |  |                 |  |  |  +------------------------------| (100)
+|        |  |                 |  |  |                                 +-----------MG257764_chordodes_sp
+|        |  |                 |  +--| (42)
+|        |  |                 |     +--JF808197_1_Chordodes_sp_MCC-2010_isolate_CHSIN_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |  |              +--| (8)
+|        |  |              |  |  +--KU509486_1_Chordodes_formosanus_isolate_YF01_cytochrome_oxidase_subunit_I_COI_gene_partial_cds_mitochondrial
+|        |  |              |  +--| (52)
+|        |  |              |     |  +--MMN
+|        |  |              |     +--| (99)
+|        |  |              |        +--XCL
+|        |  |           +--| (9)
+|        |  |           |  |                    +**HM044105_1_Chordodes_sp_MCC-2010_isolate_D02_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |  |           |  |                 +--|
+|        |  |           |  |                 |  +**vlc
+|        |  |           |  |              +--| (81)
+|        |  |           |  |              |  +--KX591950_1_Chordodes_formosanus_isolate_CH11607_cytochrome_oxidase_subunit_I_COI_gene_partial_cds_mitochondrial
+|        |  |           |  |           +--| (44)
+|        |  |           |  |           |  +--JF808205_1_Chordodes_sp_MCC-2010_isolate_CH95102_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |  |           |  |        +--| (56)
+|        |  |           |  |        |  |           +--HM044108_1_Chordodes_sp_MCC-2010_isolate_F02_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |  |           |  |        |  |        +--| (100)
+|        |  |           |  |        |  |        |  +--HMM
+|        |  |           |  |        |  |     +--| (28)
+|        |  |           |  |        |  |     |  +--KTV
+|        |  |           |  |        |  |  +--| (48)
+|        |  |           |  |        |  |  |  +--HM044112_1_Chordodes_sp_MCC-2010_isolate_D08_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |  |           |  |        |  +--| (63)
+|        |  |           |  |        |     |  +--KX591949_1_Chordodes_formosanus_isolate_CH11606_cytochrome_oxidase_subunit_I_COI_gene_partial_cds_mitochondrial
+|        |  |           |  |        |     +--| (100)
+|        |  |           |  |        |        +--KX591951_1_Chordodes_formosanus_isolate_CH11608_cytochrome_oxidase_subunit_I_COI_gene_partial_cds_mitochondrial
+|        |  |           |  |     +--| (12)
+|        |  |           |  |     |  +--HM044110_1_Chordodes_sp_MCC-2010_isolate_F04_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |  |           |  |  +--| (7)
+|        |  |           |  |  |  |        +--HM044109_1_Chordodes_sp_MCC-2010_isolate_F03_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |  |           |  |  |  |     +--| (90)
+|        |  |           |  |  |  |     |  +--KU509487_1_Chordodes_formosanus_isolate_YF02_cytochrome_oxidase_subunit_I_COI_gene_partial_cds_mitochondrial
+|        |  |           |  |  |  |  +--| (98)
+|        |  |           |  |  |  |  |  +--XBF
+|        |  |           |  |  |  +--| (21)
+|        |  |           |  |  |     |        +**HM044121_1_Chordodes_sp_MCC-2010_isolate_Z01_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |  |           |  |  |     |     +**|
+|        |  |           |  |  |     |     |  +**KU509488_1_Chordodes_formosanus_isolate_YF03_cytochrome_oxidase_subunit_I_COI_gene_partial_cds_mitochondrial
+|        |  |           |  |  |     |  +--|
+|        |  |           |  |  |     |  |  +**KU509484_1_Chordodes_formosanus_isolate_YM01_cytochrome_oxidase_subunit_I_COI_gene_partial_cds_mitochondrial
+|        |  |           |  |  |     +--| (98)
+|        |  |           |  |  |        +--HM044122_1_Chordodes_sp_MCC-2010_isolate_Z02_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |  |           |  +--| (6)
+|        |  |           |     |                 +**HM044117_1_Chordodes_sp_MCC-2010_isolate_F11_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |  |           |     |              +**|
+|        |  |           |     |              |  +**NOU
+|        |  |           |     |           +**|
+|        |  |           |     |           |  +**HM044126_1_Chordodes_sp_MCC-2010_isolate_F08_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |  |           |     |        +**|
+|        |  |           |     |        |  +**NAS
+|        |  |           |     |     +**|
+|        |  |           |     |     |  +**WAV
+|        |  |           |     |  +--|
+|        |  |           |     |  |  +**JPG
+|        |  |           |     +--| (34)
+|        |  |           |        +--HM044123_1_Chordodes_sp_MCC-2010_isolate_S01_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |  |        +--| (13)
+|        |  |        |  |           +--CH413
+|        |  |        |  |        +--| (35)
+|        |  |        |  |        |  |                                                         +--JF808206_1_Chordodes_japonensis_isolate_JTa01_cytochrome_oxidase_subunit_I__CO1__gene_partial_cds_mitochondrial
+|        |  |        |  |        |  |                                                      +--| (66)
+|        |  |        |  |        |  |                                                      |  +--SRR25249042
+|        |  |        |  |        |  |                                                   +--| (46)
+|        |  |        |  |        |  |                                                   |  +--LC776432_1_Chordodes_japonensis_CJ20_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |        |  |                                                +--| (43)
+|        |  |        |  |        |  |                                                |  +--LC776417_1_Chordodes_japonensis_CJ5_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |        |  |                                             +--| (14)
+|        |  |        |  |        |  |                                             |  |  +--LC776434_1_Chordodes_japonensis_CJ22_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |        |  |                                             |  +--| (97)
+|        |  |        |  |        |  |                                             |     +--LC776446_1_Chordodes_japonensis_CJ34_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |        |  |                                          +--| (5)
+|        |  |        |  |        |  |                                          |  |     +--LC776415_1_Chordodes_japonensis_CJ3_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |        |  |                                          |  |  +--| (84)
+|        |  |        |  |        |  |                                          |  |  |  +--LC776420_1_Chordodes_japonensis_CJ8_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |        |  |                                          |  +--| (49)
+|        |  |        |  |        |  |                                          |     |  +--LC776424_1_Chordodes_japonensis_CJ12_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |        |  |                                          |     +--| (98)
+|        |  |        |  |        |  |                                          |        +--LC776426_1_Chordodes_japonensis_CJ14_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |        |  |                                       +--| (2)
+|        |  |        |  |        |  |                                       |  |  +--LC782473_1_Chordodes_sp__1-YT-2023_A72_3_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds
+|        |  |        |  |        |  |                                       |  +--| (6)
+|        |  |        |  |        |  |                                       |     |  +--LC782476_1_Chordodes_sp__1-YT-2023_A95_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds
+|        |  |        |  |        |  |                                       |     +--| (64)
+|        |  |        |  |        |  |                                       |        +--LC782481_1_Chordodes_sp__1-YT-2023_A110_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds
+|        |  |        |  |        |  |                                    +--| (8)
+|        |  |        |  |        |  |                                    |  |                                                                             +**LC776413_1_Chordodes_japonensis_CJ1_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |        |  |                                    |  |                                                                          +**|
+|        |  |        |  |        |  |                                    |  |                                                                          |  +**LC776455_1_Chordodes_japonensis_P7_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |        |  |                                    |  |                                                                       +**|
+|        |  |        |  |        |  |                                    |  |                                                                       |  +**LC776423_1_Chordodes_japonensis_CJ11_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |        |  |                                    |  |                                                                    +**|
+|        |  |        |  |        |  |                                    |  |                                                                    |  +**LC776422_1_Chordodes_japonensis_CJ10_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |        |  |                                    |  |                                                                 +**|
+|        |  |        |  |        |  |                                    |  |                                                                 |  +**SRR25249029
+|        |  |        |  |        |  |                                    |  |                                                              +**|
+|        |  |        |  |        |  |                                    |  |                                                              |  +**LC776441_1_Chordodes_japonensis_CJ29_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |        |  |                                    |  |                                                           +**|
+|        |  |        |  |        |  |                                    |  |                                                           |  +**LC782468_1_Chordodes_sp__1-YT-2023_A47_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds
+|        |  |        |  |        |  |                                    |  |                                                        +**|
+|        |  |        |  |        |  |                                    |  |                                                        |  +**LC776418_1_Chordodes_japonensis_CJ6_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |        |  |                                    |  |                                                     +**|
+|        |  |        |  |        |  |                                    |  |                                                     |  +**LC776439_1_Chordodes_japonensis_CJ27_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |        |  |                                    |  |                                                  +**|
+|        |  |        |  |        |  |                                    |  |                                                  |  +**LC776430_1_Chordodes_japonensis_CJ18_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |        |  |                                    |  |                                               +**|
+|        |  |        |  |        |  |                                    |  |                                               |  +**LC776448_1_Chordodes_japonensis_CJ36_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |        |  |                                    |  |                                            +**|
+|        |  |        |  |        |  |                                    |  |                                            |  +**LC782474_1_Chordodes_sp__1-YT-2023_A86_1_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds
+|        |  |        |  |        |  |                                    |  |                                         +**|
+|        |  |        |  |        |  |                                    |  |                                         |  +**LC776440_1_Chordodes_japonensis_CJ28_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |        |  |                                    |  |                                      +**|
+|        |  |        |  |        |  |                                    |  |                                      |  +**LC776425_1_Chordodes_japonensis_CJ13_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |        |  |                                    |  |                                   +**|
+|        |  |        |  |        |  |                                    |  |                                   |  +**LC776443_1_Chordodes_japonensis_CJ31_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |        |  |                                    |  |                                +**|
+|        |  |        |  |        |  |                                    |  |                                |  +**SRR25249039
+|        |  |        |  |        |  |                                    |  |                             +**|
+|        |  |        |  |        |  |                                    |  |                             |  +**LC776457_1_Chordodes_japonensis_P9_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |        |  |                                    |  |                          +**|
+|        |  |        |  |        |  |                                    |  |                          |  +**LC776416_1_Chordodes_japonensis_CJ4_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |        |  |                                    |  |                       +**|
+|        |  |        |  |        |  |                                    |  |                       |  +**LC776428_1_Chordodes_japonensis_CJ16_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |        |  |                                    |  |                    +**|
+|        |  |        |  |        |  |                                    |  |                    |  +**SRR25249031
+|        |  |        |  |        |  |                                    |  |                 +**|
+|        |  |        |  |        |  |                                    |  |                 |  +**LC776442_1_Chordodes_japonensis_CJ30_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |        |  |                                    |  |              +**|
+|        |  |        |  |        |  |                                    |  |              |  +**SRR25249033
+|        |  |        |  |        |  |                                    |  |           +**|
+|        |  |        |  |        |  |                                    |  |           |  +**LC776431_1_Chordodes_japonensis_CJ19_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |        |  |                                    |  |        +**|
+|        |  |        |  |        |  |                                    |  |        |  +**SRR25249032
+|        |  |        |  |        |  |                                    |  |     +**|
+|        |  |        |  |        |  |                                    |  |     |  +**LC782477_1_Chordodes_sp__1-YT-2023_A96_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds
+|        |  |        |  |        |  |                                    |  |  +--|
+|        |  |        |  |        |  |                                    |  |  |  +**LC776419_1_Chordodes_japonensis_CJ7_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |        |  |                                    |  +--| (41)
+|        |  |        |  |        |  |                                    |     +--LC776414_1_Chordodes_japonensis_CJ2_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |        |  |                                 +--| (24)
+|        |  |        |  |        |  |                                 |  |        +**LC776444_1_Chordodes_japonensis_CJ32_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |        |  |                                 |  |     +--|
+|        |  |        |  |        |  |                                 |  |     |  +**LC782484_1_Chordodes_sp__1-YT-2023_A83_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds
+|        |  |        |  |        |  |                                 |  |  +--| (97)
+|        |  |        |  |        |  |                                 |  |  |  +--LC782472_1_Chordodes_sp__1-YT-2023_A72_2_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds
+|        |  |        |  |        |  |                                 |  +--| (20)
+|        |  |        |  |        |  |                                 |     +--SRR25249040
+|        |  |        |  |        |  |                              +--| (4)
+|        |  |        |  |        |  |                              |  |                             +**LC776421_1_Chordodes_japonensis_CJ9_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |        |  |                              |  |                          +**|
+|        |  |        |  |        |  |                              |  |                          |  +**LC776437_1_Chordodes_japonensis_CJ25_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |        |  |                              |  |                       +**|
+|        |  |        |  |        |  |                              |  |                       |  +**SRR25249035
+|        |  |        |  |        |  |                              |  |                    +**|
+|        |  |        |  |        |  |                              |  |                    |  +**LC782480_1_Chordodes_sp__1-YT-2023_A105_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds
+|        |  |        |  |        |  |                              |  |                 +**|
+|        |  |        |  |        |  |                              |  |                 |  +**LC776445_1_Chordodes_japonensis_CJ33_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |        |  |                              |  |              +**|
+|        |  |        |  |        |  |                              |  |              |  +**LC782469_1_Chordodes_sp__1-YT-2023_A63_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds
+|        |  |        |  |        |  |                              |  |           +**|
+|        |  |        |  |        |  |                              |  |           |  +**LC776438_1_Chordodes_japonensis_CJ26_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |        |  |                              |  |        +**|
+|        |  |        |  |        |  |                              |  |        |  +**LC776436_1_Chordodes_japonensis_CJ24_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |        |  |                              |  |     +--|
+|        |  |        |  |        |  |                              |  |     |  +**LC782475_1_Chordodes_sp__1-YT-2023_A92_3_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds
+|        |  |        |  |        |  |                              |  |  +--| (33)
+|        |  |        |  |        |  |                              |  |  |  +--LC776427_1_Chordodes_japonensis_CJ15_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |        |  |                              |  +--| (6)
+|        |  |        |  |        |  |                              |     |  +--LC776447_1_Chordodes_japonensis_CJ35_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |        |  |                              |     +--| (14)
+|        |  |        |  |        |  |                              |        +--SRR25249041
+|        |  |        |  |        |  |                           +--| (10)
+|        |  |        |  |        |  |                           |  +--SRR25249043
+|        |  |        |  |        |  |                        +--| (37)
+|        |  |        |  |        |  |                        |  +--SRR25249027
+|        |  |        |  |        |  |                     +--| (42)
+|        |  |        |  |        |  |                     |  |  +--LC782470_1_Chordodes_sp__1-YT-2023_A65_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds
+|        |  |        |  |        |  |                     |  +--| (97)
+|        |  |        |  |        |  |                     |     +--LC782478_1_Chordodes_sp__1-YT-2023_A97_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds
+|        |  |        |  |        |  |                  +--| (63)
+|        |  |        |  |        |  |                  |  |  +--LC776429_1_Chordodes_japonensis_CJ17_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |        |  |                  |  +--| (49)
+|        |  |        |  |        |  |                  |     +--LC776433_1_Chordodes_japonensis_CJ21_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |        |  +------------------| (97)
+|        |  |        |  |        |                     +--LC776435_1_Chordodes_japonensis_CJ23_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |     +--| (13)
+|        |  |        |  |     |  |        +--FMW
+|        |  |        |  |     |  |     +--| (99)
+|        |  |        |  |     |  |     |  +--ZHW
+|        |  |        |  |     |  |  +--| (50)
+|        |  |        |  |     |  |  |  |                                            +**LC776385_1_Chordodes_formosanus_CF2_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |     |  |  |  |                                         +**|
+|        |  |        |  |     |  |  |  |                                         |  +**LC776410_1_Chordodes_formosanus_CF27_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |     |  |  |  |                                      +**|
+|        |  |        |  |     |  |  |  |                                      |  +**LC776402_1_Chordodes_formosanus_CF19_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |     |  |  |  |                                   +**|
+|        |  |        |  |     |  |  |  |                                   |  +**LC776412_1_Chordodes_formosanus_CF29_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |     |  |  |  |                                +**|
+|        |  |        |  |     |  |  |  |                                |  +**LC776401_1_Chordodes_formosanus_CF18_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |     |  |  |  |                             +**|
+|        |  |        |  |     |  |  |  |                             |  +**LC776397_1_Chordodes_formosanus_CF14_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |     |  |  |  |                          +**|
+|        |  |        |  |     |  |  |  |                          |  +**LC776400_1_Chordodes_formosanus_CF17_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |     |  |  |  |                       +**|
+|        |  |        |  |     |  |  |  |                       |  +**LC776389_1_Chordodes_formosanus_CF6_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |     |  |  |  |                    +**|
+|        |  |        |  |     |  |  |  |                    |  +**LC776395_1_Chordodes_formosanus_CF12_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |     |  |  |  |                 +**|
+|        |  |        |  |     |  |  |  |                 |  +**LC776409_1_Chordodes_formosanus_CF26_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |     |  |  |  |              +**|
+|        |  |        |  |     |  |  |  |              |  +**LC776404_1_Chordodes_formosanus_CF21_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |     |  |  |  |           +**|
+|        |  |        |  |     |  |  |  |           |  +**LC776408_1_Chordodes_formosanus_CF25_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |     |  |  |  |        +**|
+|        |  |        |  |     |  |  |  |        |  +**LC776391_1_Chordodes_formosanus_CF8_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |     |  |  |  |     +--|
+|        |  |        |  |     |  |  |  |     |  +**LC776390_1_Chordodes_formosanus_CF7_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |     |  |  |  |  +--| (70)
+|        |  |        |  |     |  |  |  |  |  +--LC776387_1_Chordodes_formosanus_CF4_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |     |  |  |  +--| (58)
+|        |  |        |  |     |  |  |     +--LC776386_1_Chordodes_formosanus_CF3_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |     |  +--| (34)
+|        |  |        |  |     |     |  +--LC776394_1_Chordodes_formosanus_CF11_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |     |     +--| (78)
+|        |  |        |  |     |        +--LC776398_1_Chordodes_formosanus_CF15_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |  +--| (35)
+|        |  |        |  |  |  |  +--frn
+|        |  |        |  |  |  +--| (9)
+|        |  |        |  |  |     |           +--JF808198_1_Chordodes_sp__MCC-2010_isolate_JHp03_cytochrome_oxidase_subunit_I__CO1__gene_partial_cds_mitochondrial
+|        |  |        |  |  |     |        +--| (68)
+|        |  |        |  |  |     |        |  |  +--JF808199_1_Chordodes_sp__MCC-2010_isolate_JHp04_cytochrome_oxidase_subunit_I__CO1__gene_partial_cds_mitochondrial
+|        |  |        |  |  |     |        |  +--| (56)
+|        |  |        |  |  |     |        |     +--LC776403_1_Chordodes_formosanus_CF20_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |  |     |     +--| (64)
+|        |  |        |  |  |     |     |  |  +--JF808200_1_Chordodes_sp__MCC-2010_isolate_JHp08_cytochrome_oxidase_subunit_I__CO1__gene_partial_cds_mitochondrial
+|        |  |        |  |  |     |     |  +--| (68)
+|        |  |        |  |  |     |     |     |  +--LC776392_1_Chordodes_formosanus_CF9_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |  |     |     |     +--| (99)
+|        |  |        |  |  |     |     |        +--LC776399_1_Chordodes_formosanus_CF16_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds
+|        |  |        |  |  |     |  +--| (51)
+|        |  |        |  |  |     |  |  +--JF808201_1_Chordodes_sp__MCC-2010_isolate_JHp06_cytochrome_oxidase_subunit_I__CO1__gene_partial_cds_mitochondrial
+|        |  |        |  |  |     +--| (63)
+|        |  |        |  |  |        +--JF808202_1_Chordodes_sp__MCC-2010_isolate_JHp07_cytochrome_oxidase_subunit_I__CO1__gene_partial_cds_mitochondrial
+|        |  |        |  +--| (9)
+|        |  |        |     +--HM044113_1_Chordodes_sp_MCC-2010_isolate_D03_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |  |     +--| (48)
+|        |  |     |  |        +**ccw
+|        |  |     |  |     +**|
+|        |  |     |  |     |  +**DVD
+|        |  |     |  |  +--|
+|        |  |     |  |  |  +**tou
+|        |  |     |  +--| (99)
+|        |  |     |     +--CFHF_01
+|        |  |  +--| (16)
+|        |  |  |  |     +--GIW_consensus
+|        |  |  |  |  +--| (100)
+|        |  |  |  |  |  +--HM044128_1_Chordodes_sp_MCC-2010_isolate_F10_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |  |  |  +--| (99)
+|        |  |  |     |  +--HM044114_1_Chordodes_sp_MCC-2010_isolate_D04_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |  |  |     +--| (84)
+|        |  |  |        +--KX591953_1_Chordodes_formosanus_isolate_Ac26216_cytochrome_oxidase_subunit_I_COI_gene_partial_cds_mitochondrial
+|        |  +--| (4)
+|        |     |     +--BRK
+|        |     |  +--| (98)
+|        |     |  |  +--LOG
+|        |     +--| (20)
+|        |        |  +--HM044125_1_Chordodes_sp_MCC-2010_isolate_F07_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|        |        +--| (99)
+|        |           +--JF808203_1_Chordodes_sp_MCC-2010_isolate_CH95101_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|     +--| (6)
+|     |  |  +--HM044111_1_Chordodes_sp_MCC-2010_isolate_F12_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|     |  +--| (15)
+|     |     +--MP_04
+|  +--| (74)
+|  |  |     +**DGL_L
+|  |  |  +--|
+|  |  |  |  +**HM044127_1_Chordodes_sp_MCC-2010_isolate_F09_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|  |  +--| (99)
+|  |     +--HM044106_1_Chordodes_sp_MCC-2010_isolate_F01_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
++--| (97)
+|  +--HM044120_1_Chordodes_sp_MCC-2010_isolate_F05_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial
+|
++--L1S
+
+
+Consensus tree in newick format: 
+
+(2lm:0.0000023911,(((((((((((((((((((((ALV:0.0000000000,MPW:0.0000000000):0.0000000000,HM044124_1_Chordodes_sp_MCC-2010_isolate_F06_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0000000000):0.0000000000,CAS:0.0000000000):0.0000000000,HM044104_1_Chordodes_sp_MCC-2010_isolate_D01_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0000000000):0.0000000000,CH116:0.0000000000):0.0000000000,KU509485_1_Chordodes_formosanus_isolate_YM02_cytochrome_oxidase_subunit_I_COI_gene_partial_cds_mitochondrial:0.0000000000):0.0000000000,FLAC:0.0000000000):0.0000000000,BLM:0.0000000000):0.0000000000,MCCH_02:0.0000000000):0.0000000000,HM044119_1_Chordodes_sp_MCC-2010_isolate_D07_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0000000000):0.0000000000,HQ322115_1_Chordodes_sp_MCC-2010_isolate_Z03_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0000000000):0.0000000000,MCCH_01:0.0000000000):0.0000000000,HM044107_1_Chordodes_sp_MCC-2010_isolate_T01_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0000000000):0.0000000000,HM044116_1_Chordodes_sp_MCC-2010_isolate_D06_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0000000000):0.0000000000,HM044115_1_Chordodes_sp_MCC-2010_isolate_D05_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0000000000):0.0000000000,KX591952_1_Chordodes_formosanus_isolate_CH26207_cytochrome_oxidase_subunit_I_COI_gene_partial_cds_mitochondrial:0.0000000000):0.0000023911,BDSN:0.0000023911)30:0.0000023911,(((((((((AVX:0.0058625222,(HQ322116_1_Chordodes_sp_MCC-2010_isolate_Z04_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0000023911,(JF808204_1_Chordodes_sp_MCC-2010_isolate_Z05_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0058784431,ZTW:0.0028996874)19:0.0000023911)19:0.0000023911)30:0.0000023911,HM044118_1_Chordodes_sp_MCC-2010_isolate_F13_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0029053136)14:0.0000023911,(((((((((((((((((((JF808194_1_Chordodes_sp__MCC-2010_isolate_JHp01_cytochrome_oxidase_subunit_I__CO1__gene_partial_cds_mitochondrial:0.0000000000,SRR25249025:0.0000000000):0.0000000000,SRR25249037:0.0000000000):0.0000000000,LC782483_1_Chordodes_sp__2-YT-2023_A68_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds:0.0000000000):0.0000000000,SRR25249036:0.0000000000):0.0000000000,LC776396_1_Chordodes_formosanus_CF13_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,SRR25249030:0.0000000000):0.0000000000,LC776405_1_Chordodes_formosanus_CF22_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,JF808196_1_Chordodes_sp__MCC-2010_isolate_JHp05_cytochrome_oxidase_subunit_I__CO1__gene_partial_cds_mitochondrial:0.0000000000):0.0000000000,SRR25249026:0.0000000000):0.0000000000,SRR25249038:0.0000000000):0.0000000000,LC776393_1_Chordodes_formosanus_CF10_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,SRR25249028:0.0000000000):0.0000000000,LC776407_1_Chordodes_formosanus_CF24_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,SRR25249034:0.0000000000):0.0000023911,JF808195_1_Chordodes_sp__MCC-2010_isolate_JHp02_cytochrome_oxidase_subunit_I__CO1__gene_partial_cds_mitochondrial:0.0000023911)97:0.0029335260,((((((((((LC776384_1_Chordodes_formosanus_CF1_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000,LC776458_1_Chordodes_formosanus_P10_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,LC776452_1_Chordodes_formosanus_P4_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,LC776451_1_Chordodes_formosanus_P3_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,LC776456_1_Chordodes_formosanus_P8_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,LC776450_1_Chordodes_formosanus_P2_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,LC776453_1_Chordodes_formosanus_P5_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,LC776449_1_Chordodes_formosanus_P1_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,LC776454_1_Chordodes_formosanus_P6_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,LC776411_1_Chordodes_formosanus_CF28_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000023911,LC776406_1_Chordodes_formosanus_CF23_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000023911)77:0.0000023911)34:0.0000023911,LC776388_1_Chordodes_formosanus_CF5_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0029238546)37:0.0020528537,(((((LC782471_1_Chordodes_sp__3-YT-2023_A69_3_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds:0.0000000000,LC782486_1_Chordodes_sp__3-YT-2023_A104_3_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds:0.0000000000):0.0000000000,LC782485_1_Chordodes_sp__3-YT-2023_A92_1_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds:0.0000000000):0.0000000000,LC782482_1_Chordodes_sp__3-YT-2023_A114_1_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds:0.0000000000):0.0000023911,LC782479_1_Chordodes_sp__3-YT-2023_A104_1_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds:0.0000023911)99:0.4442497591,MG257764_chordodes_sp:0.2060218580)100:0.4965181640)45:0.0008593870,JF808197_1_Chordodes_sp_MCC-2010_isolate_CHSIN_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0030151814)42:0.0028928243)36:0.0028896670,(KU509486_1_Chordodes_formosanus_isolate_YF01_cytochrome_oxidase_subunit_I_COI_gene_partial_cds_mitochondrial:0.0000023911,(MMN:0.0000023911,XCL:0.0000023911)99:0.0058859909)52:0.0028906459)8:0.0000023911,(((((((HM044105_1_Chordodes_sp_MCC-2010_isolate_D02_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0000000000,vlc:0.0000000000):0.0000023911,KX591950_1_Chordodes_formosanus_isolate_CH11607_cytochrome_oxidase_subunit_I_COI_gene_partial_cds_mitochondrial:0.0000023911)81:0.0000023911,JF808205_1_Chordodes_sp_MCC-2010_isolate_CH95102_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0116700323)44:0.0000023911,((((HM044108_1_Chordodes_sp_MCC-2010_isolate_F02_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0000023911,HMM:0.0000023911)100:0.0028880775,KTV:0.0000023911)28:0.0000023911,HM044112_1_Chordodes_sp_MCC-2010_isolate_D08_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0029002170)48:0.0000023911,(KX591949_1_Chordodes_formosanus_isolate_CH11606_cytochrome_oxidase_subunit_I_COI_gene_partial_cds_mitochondrial:0.0000023911,KX591951_1_Chordodes_formosanus_isolate_CH11608_cytochrome_oxidase_subunit_I_COI_gene_partial_cds_mitochondrial:0.0000023911)100:0.0028989133)63:0.0028811104)56:0.0028774485,HM044110_1_Chordodes_sp_MCC-2010_isolate_F04_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0028921687)12:0.0000023911,(((HM044109_1_Chordodes_sp_MCC-2010_isolate_F03_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0000023911,KU509487_1_Chordodes_formosanus_isolate_YF02_cytochrome_oxidase_subunit_I_COI_gene_partial_cds_mitochondrial:0.0000023911)90:0.0000023911,XBF:0.0028904203)98:0.0028898621,(((HM044121_1_Chordodes_sp_MCC-2010_isolate_Z01_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0000000000,KU509488_1_Chordodes_formosanus_isolate_YF03_cytochrome_oxidase_subunit_I_COI_gene_partial_cds_mitochondrial:0.0000000000):0.0000000000,KU509484_1_Chordodes_formosanus_isolate_YM01_cytochrome_oxidase_subunit_I_COI_gene_partial_cds_mitochondrial:0.0000000000):0.0000023911,HM044122_1_Chordodes_sp_MCC-2010_isolate_Z02_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0000023911)98:0.0028900370)21:0.0000023911)7:0.0000023911,((((((HM044117_1_Chordodes_sp_MCC-2010_isolate_F11_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0000000000,NOU:0.0000000000):0.0000000000,HM044126_1_Chordodes_sp_MCC-2010_isolate_F08_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0000000000):0.0000000000,NAS:0.0000000000):0.0000000000,WAV:0.0000000000):0.0000000000,JPG:0.0000000000):0.0000023911,HM044123_1_Chordodes_sp_MCC-2010_isolate_S01_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0000023911)34:0.0000023911)6:0.0000023911)9:0.0000023911,((((CH413:0.0081314306,((((((((((((((JF808206_1_Chordodes_japonensis_isolate_JTa01_cytochrome_oxidase_subunit_I__CO1__gene_partial_cds_mitochondrial:0.0061402057,SRR25249042:0.0030930909)66:0.0006365688,LC776432_1_Chordodes_japonensis_CJ20_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000023911)46:0.0022789545,LC776417_1_Chordodes_japonensis_CJ5_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000023911)43:0.0030394381,(LC776434_1_Chordodes_japonensis_CJ22_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0029975481,LC776446_1_Chordodes_japonensis_CJ34_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000023911)97:0.0030105859)14:0.0000023911,((LC776415_1_Chordodes_japonensis_CJ3_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000023911,LC776420_1_Chordodes_japonensis_CJ8_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000023911)84:0.0000023911,(LC776424_1_Chordodes_japonensis_CJ12_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000023911,LC776426_1_Chordodes_japonensis_CJ14_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000023911)98:0.0030344805)49:0.0030226002)5:0.0000023911,(LC782473_1_Chordodes_sp__1-YT-2023_A72_3_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds:0.0030373194,(LC782476_1_Chordodes_sp__1-YT-2023_A95_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds:0.0030224674,LC782481_1_Chordodes_sp__1-YT-2023_A110_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds:0.0000023911)64:0.0000022336)6:0.0000023911)2:0.0000023911,((((((((((((((((((((((((((LC776413_1_Chordodes_japonensis_CJ1_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000,LC776455_1_Chordodes_japonensis_P7_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,LC776423_1_Chordodes_japonensis_CJ11_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,LC776422_1_Chordodes_japonensis_CJ10_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,SRR25249029:0.0000000000):0.0000000000,LC776441_1_Chordodes_japonensis_CJ29_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,LC782468_1_Chordodes_sp__1-YT-2023_A47_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds:0.0000000000):0.0000000000,LC776418_1_Chordodes_japonensis_CJ6_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,LC776439_1_Chordodes_japonensis_CJ27_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,LC776430_1_Chordodes_japonensis_CJ18_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,LC776448_1_Chordodes_japonensis_CJ36_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,LC782474_1_Chordodes_sp__1-YT-2023_A86_1_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds:0.0000000000):0.0000000000,LC776440_1_Chordodes_japonensis_CJ28_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,LC776425_1_Chordodes_japonensis_CJ13_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,LC776443_1_Chordodes_japonensis_CJ31_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,SRR25249039:0.0000000000):0.0000000000,LC776457_1_Chordodes_japonensis_P9_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,LC776416_1_Chordodes_japonensis_CJ4_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,LC776428_1_Chordodes_japonensis_CJ16_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,SRR25249031:0.0000000000):0.0000000000,LC776442_1_Chordodes_japonensis_CJ30_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,SRR25249033:0.0000000000):0.0000000000,LC776431_1_Chordodes_japonensis_CJ19_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,SRR25249032:0.0000000000):0.0000000000,LC782477_1_Chordodes_sp__1-YT-2023_A96_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds:0.0000000000):0.0000000000,LC776419_1_Chordodes_japonensis_CJ7_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000023911,LC776414_1_Chordodes_japonensis_CJ2_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000023911)41:0.0000023911)8:0.0000023911,(((LC776444_1_Chordodes_japonensis_CJ32_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000,LC782484_1_Chordodes_sp__1-YT-2023_A83_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds:0.0000000000):0.0000023911,LC782472_1_Chordodes_sp__1-YT-2023_A72_2_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds:0.0000023911)97:0.0030375818,SRR25249040:0.0030274079)20:0.0000023911)24:0.0030289248,((((((((((LC776421_1_Chordodes_japonensis_CJ9_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000,LC776437_1_Chordodes_japonensis_CJ25_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,SRR25249035:0.0000000000):0.0000000000,LC782480_1_Chordodes_sp__1-YT-2023_A105_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds:0.0000000000):0.0000000000,LC776445_1_Chordodes_japonensis_CJ33_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,LC782469_1_Chordodes_sp__1-YT-2023_A63_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds:0.0000000000):0.0000000000,LC776438_1_Chordodes_japonensis_CJ26_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,LC776436_1_Chordodes_japonensis_CJ24_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,LC782475_1_Chordodes_sp__1-YT-2023_A92_3_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds:0.0000000000):0.0000023911,LC776427_1_Chordodes_japonensis_CJ15_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000023911)33:0.0000023911,(LC776447_1_Chordodes_japonensis_CJ35_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0030335047,SRR25249041:0.0030443061)14:0.0000023911)6:0.0000023911)4:0.0000023911,SRR25249043:0.0030414370)10:0.0000023911,SRR25249027:0.0030307452)37:0.0030478310,(LC782470_1_Chordodes_sp__1-YT-2023_A65_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds:0.0000023911,LC782478_1_Chordodes_sp__1-YT-2023_A97_mitochondrial_COI_gene_for_cytochrome_c_oxidase_subunit_I_partial_cds:0.0000023911)97:0.0061212336)42:0.0000023911,(LC776429_1_Chordodes_japonensis_CJ17_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000023911,LC776433_1_Chordodes_japonensis_CJ21_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0030783248)49:0.0000023911)63:0.0061607358,LC776435_1_Chordodes_japonensis_CJ23_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000023911)97:0.3160217081)35:0.0131730875,(((FMW:0.0000023911,ZHW:0.0000023911)99:0.0059374199,(((((((((((((((LC776385_1_Chordodes_formosanus_CF2_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000,LC776410_1_Chordodes_formosanus_CF27_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,LC776402_1_Chordodes_formosanus_CF19_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,LC776412_1_Chordodes_formosanus_CF29_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,LC776401_1_Chordodes_formosanus_CF18_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,LC776397_1_Chordodes_formosanus_CF14_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,LC776400_1_Chordodes_formosanus_CF17_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,LC776389_1_Chordodes_formosanus_CF6_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,LC776395_1_Chordodes_formosanus_CF12_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,LC776409_1_Chordodes_formosanus_CF26_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,LC776404_1_Chordodes_formosanus_CF21_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,LC776408_1_Chordodes_formosanus_CF25_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,LC776391_1_Chordodes_formosanus_CF8_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000000000,LC776390_1_Chordodes_formosanus_CF7_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000000000):0.0000023911,LC776387_1_Chordodes_formosanus_CF4_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000023911)70:0.0000023911,LC776386_1_Chordodes_formosanus_CF3_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0029030319)58:0.0000023911)50:0.0028870365,(LC776394_1_Chordodes_formosanus_CF11_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000023911,LC776398_1_Chordodes_formosanus_CF15_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000023911)78:0.0000023911)34:0.0000023911)13:0.0028910271,(frn:0.0029091099,((((JF808198_1_Chordodes_sp__MCC-2010_isolate_JHp03_cytochrome_oxidase_subunit_I__CO1__gene_partial_cds_mitochondrial:0.0000023911,(JF808199_1_Chordodes_sp__MCC-2010_isolate_JHp04_cytochrome_oxidase_subunit_I__CO1__gene_partial_cds_mitochondrial:0.0029107525,LC776403_1_Chordodes_formosanus_CF20_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0087652252)56:0.0000023911)68:0.0029304596,(JF808200_1_Chordodes_sp__MCC-2010_isolate_JHp08_cytochrome_oxidase_subunit_I__CO1__gene_partial_cds_mitochondrial:0.0058824148,(LC776392_1_Chordodes_formosanus_CF9_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000023911,LC776399_1_Chordodes_formosanus_CF16_mitochondrial_COX1_gene_for_cytochrome_c_oxidase_subunit_1_partial_cds:0.0000023911)99:0.0059116794)68:0.0000023911)64:0.0029266954,JF808201_1_Chordodes_sp__MCC-2010_isolate_JHp06_cytochrome_oxidase_subunit_I__CO1__gene_partial_cds_mitochondrial:0.0000023911)51:0.0000023911,JF808202_1_Chordodes_sp__MCC-2010_isolate_JHp07_cytochrome_oxidase_subunit_I__CO1__gene_partial_cds_mitochondrial:0.0058635713)63:0.0028915692)9:0.0000023911)35:0.0028927813,HM044113_1_Chordodes_sp_MCC-2010_isolate_D03_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0028891083)9:0.0000023911)13:0.0000023911,(((ccw:0.0000000000,DVD:0.0000000000):0.0000000000,tou:0.0000000000):0.0000023911,CFHF_01:0.0000023911)99:0.0028938213)48:0.0028943678,((GIW_consensus:0.0000023911,HM044128_1_Chordodes_sp_MCC-2010_isolate_F10_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0000023911)100:0.0028947519,(HM044114_1_Chordodes_sp_MCC-2010_isolate_D04_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0000023911,KX591953_1_Chordodes_formosanus_isolate_Ac26216_cytochrome_oxidase_subunit_I_COI_gene_partial_cds_mitochondrial:0.0000023911)84:0.0000023911)99:0.0028988904)16:0.0000023911,((BRK:0.0000023911,LOG:0.0059019398)98:0.0058842256,(HM044125_1_Chordodes_sp_MCC-2010_isolate_F07_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0000023911,JF808203_1_Chordodes_sp_MCC-2010_isolate_CH95101_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0000023911)99:0.0028992927)20:0.0000023911)4:0.0000023911)4:0.0000023911,(HM044111_1_Chordodes_sp_MCC-2010_isolate_F12_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0029149766,MP_04:0.0029126718)15:0.0000023911)6:0.0000023911,((DGL_L:0.0000000000,HM044127_1_Chordodes_sp_MCC-2010_isolate_F09_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0000000000):0.0000023911,HM044106_1_Chordodes_sp_MCC-2010_isolate_F01_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0000023911)99:0.0029072524)74:0.0029065987,HM044120_1_Chordodes_sp_MCC-2010_isolate_F05_cytochrome_oxidase_subunit_I_CO1_gene_partial_cds_mitochondrial:0.0029858350)97:0.0029332581,L1S:0.0000023911);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t no_outgroup.fas.treefile -m "TN{8.94682,5.62731}+F{0.28498,0.199078,0.157419,0.358523}+I{0.545776}+G4{1.57435}" --length 352
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s no_outgroup.fas --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s no_outgroup.fas --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sat Nov 30 16:57:47 2024
+Total CPU time used: 46.81238 seconds (0h:0m:46s)
+Total wall-clock time used: 48.59156327 seconds (0h:0m:48s)
+

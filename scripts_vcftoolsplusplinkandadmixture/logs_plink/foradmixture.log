@@ -1,0 +1,29 @@
+PLINK v2.0.0-a.6.9LM 64-bit Intel (29 Jan 2025)
+Options in effect:
+  --allow-extra-chr
+  --double-id
+  --make-bed
+  --out foradmixture
+  --set-missing-var-ids @:#
+  --vcf filtered_mincov.recode.vcf
+
+Hostname: Mattia
+Working directory: /mnt/d/Downloads/test_vcf/again_50k
+Start time: Thu Jun 26 08:18:37 2025
+
+Random number seed: 1750918717
+7840 MiB RAM detected, ~7209 available; reserving 3920 MiB for main workspace.
+Using up to 8 compute threads.
+--vcf: 1282 variants scanned.
+--vcf: foradmixture-temporary.pgen + foradmixture-temporary.pvar.zst +
+foradmixture-temporary.psam written.
+27 samples (0 females, 0 males, 27 ambiguous; 27 founders) loaded from
+foradmixture-temporary.psam.
+Note: 727 nonstandard chromosome codes present.
+1282 variants loaded from foradmixture-temporary.pvar.zst.
+Note: No phenotype data present.
+Writing foradmixture.fam ... done.
+Writing foradmixture.bim ... done.
+Writing foradmixture.bed ... done.
+
+End time: Thu Jun 26 08:18:37 2025

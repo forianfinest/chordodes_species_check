@@ -1,0 +1,26 @@
+PLINK v2.0.0-a.6.9LM 64-bit Intel (29 Jan 2025)
+Options in effect:
+  --bfile ../data_plink
+  --extract pruned_data.prune.in
+  --make-bed
+  --out data_lowLD
+
+Hostname: Mattia
+Working directory: /mnt/d/Downloads/test_vcf/again_50k
+Start time: Thu Jun 26 07:41:51 2025
+
+Random number seed: 1750916511
+7840 MiB RAM detected, ~7233 available; reserving 3920 MiB for main workspace.
+Using up to 8 compute threads.
+27 samples (0 females, 0 males, 27 ambiguous; 27 founders) loaded from
+../data_plink.fam.
+Note: 17662 nonstandard chromosome codes present.
+297842 variants loaded from ../data_plink.bim.
+Note: No phenotype data present.
+--extract: 96667 variants remaining.
+96667 variants remaining after main filters.
+Writing data_lowLD.fam ... done.
+Writing data_lowLD.bim ... done.
+Writing data_lowLD.bed ... done.
+
+End time: Thu Jun 26 07:41:51 2025

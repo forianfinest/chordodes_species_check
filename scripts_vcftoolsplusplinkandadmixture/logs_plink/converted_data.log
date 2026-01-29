@@ -1,0 +1,21 @@
+PLINK v2.0.0-a.6.9LM 64-bit Intel (29 Jan 2025)
+Options in effect:
+  --bfile data_lowLD
+  --export vcf
+  --out converted_data
+
+Hostname: Mattia
+Working directory: /mnt/d/Downloads/test_vcf/again_50k
+Start time: Thu Jun 26 07:42:01 2025
+
+Random number seed: 1750916521
+7840 MiB RAM detected, ~7235 available; reserving 3920 MiB for main workspace.
+Using up to 8 compute threads.
+27 samples (0 females, 0 males, 27 ambiguous; 27 founders) loaded from
+data_lowLD.fam.
+Note: 17662 nonstandard chromosome codes present.
+96667 variants loaded from data_lowLD.bim.
+Note: No phenotype data present.
+--export vcf to converted_data.vcf ... done.
+
+End time: Thu Jun 26 07:42:01 2025

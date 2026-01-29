@@ -1,0 +1,29 @@
+PLINK v2.0.0-a.6.9LM 64-bit Intel (29 Jan 2025)
+Options in effect:
+  --allow-extra-chr
+  --double-id
+  --make-bed
+  --out lessind
+  --set-missing-var-ids @:#
+  --vcf lessind_fromr.vcf
+
+Hostname: Mattia
+Working directory: /mnt/d/Downloads/test_vcf/again_50k
+Start time: Thu Jun 26 09:22:26 2025
+
+Random number seed: 1750922546
+7840 MiB RAM detected, ~7206 available; reserving 3920 MiB for main workspace.
+Using up to 8 compute threads.
+--vcf: 1282 variants scanned.
+--vcf: lessind-temporary.pgen + lessind-temporary.pvar.zst +
+lessind-temporary.psam written.
+24 samples (0 females, 0 males, 24 ambiguous; 24 founders) loaded from
+lessind-temporary.psam.
+Note: 727 nonstandard chromosome codes present.
+1282 variants loaded from lessind-temporary.pvar.zst.
+Note: No phenotype data present.
+Writing lessind.fam ... done.
+Writing lessind.bim ... done.
+Writing lessind.bed ... done.
+
+End time: Thu Jun 26 09:22:26 2025

@@ -1,0 +1,22 @@
+PLINK v2.0.0-a.6.9LM 64-bit Intel (29 Jan 2025)
+Options in effect:
+  --bfile foradmixture
+  --freq
+  --out temp
+
+Hostname: Mattia
+Working directory: /mnt/d/Downloads/test_vcf/again_50k
+Start time: Thu Jun 26 08:09:50 2025
+
+Random number seed: 1750918190
+7840 MiB RAM detected, ~7210 available; reserving 3920 MiB for main workspace.
+Using up to 8 compute threads.
+27 samples (0 females, 0 males, 27 ambiguous; 27 founders) loaded from
+foradmixture.fam.
+Note: 727 nonstandard chromosome codes present.
+1282 variants loaded from foradmixture.bim.
+Note: No phenotype data present.
+Calculating allele frequencies... done.
+--freq: Allele frequencies (founders only) written to temp.afreq .
+
+End time: Thu Jun 26 08:09:50 2025

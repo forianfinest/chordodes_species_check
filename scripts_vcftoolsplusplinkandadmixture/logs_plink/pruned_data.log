@@ -1,0 +1,24 @@
+PLINK v2.0.0-a.6.9LM 64-bit Intel (29 Jan 2025)
+Options in effect:
+  --bad-ld
+  --bfile ../data_plink
+  --indep-pairwise 50 10 0.5
+  --out pruned_data
+
+Hostname: Mattia
+Working directory: /mnt/d/Downloads/test_vcf/again_50k
+Start time: Thu Jun 26 07:41:01 2025
+
+Random number seed: 1750916461
+7840 MiB RAM detected, ~7234 available; reserving 3920 MiB for main workspace.
+Using up to 8 compute threads.
+27 samples (0 females, 0 males, 27 ambiguous; 27 founders) loaded from
+../data_plink.fam.
+Note: 17662 nonstandard chromosome codes present.
+297842 variants loaded from ../data_plink.bim.
+Note: No phenotype data present.
+Calculating allele frequencies... done.
+--indep-pairwise (7 compute threads): 201175/297842 variants removed.
+Variant lists written to pruned_data.prune.in and pruned_data.prune.out .
+
+End time: Thu Jun 26 07:41:01 2025

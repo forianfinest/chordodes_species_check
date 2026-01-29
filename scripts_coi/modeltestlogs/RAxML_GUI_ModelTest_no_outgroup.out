@@ -1,0 +1,180 @@
+--------------------------------------------------------------------------------
+ModelTest-NG v0.1.7
+
+Input data:
+  MSA:        D:\stuff\cluster\id_worms\even_more\goodbs\no_outgroup\no_outgroup.fas
+  Tree:       Maximum parsimony
+    file:           -
+  #taxa:            200
+  #sites:           352
+  #patterns:        107
+  Max. thread mem:  10 MB
+
+Output:
+  Log:           D:\stuff\cluster\id_worms\even_more\goodbs\no_outgroup\RAxML_GUI_ModelTest_no_outgroup.log
+  Starting tree: D:\stuff\cluster\id_worms\even_more\goodbs\no_outgroup\RAxML_GUI_ModelTest_no_outgroup.tree
+  Results:       D:\stuff\cluster\id_worms\even_more\goodbs\no_outgroup\RAxML_GUI_ModelTest_no_outgroup.out
+
+Selection options:
+  # dna schemes:      11
+  # dna models:       88
+  include model parameters:
+    Uniform:         true
+    p-inv (+I):      true
+    gamma (+G):      true
+    both (+I+G):     true
+    free rates (+R): false
+    fixed freqs:     true
+    estimated freqs: true
+    #categories:     4
+  gamma rates mode:   mean
+  asc bias:           none
+  epsilon (opt):      0.01
+  epsilon (par):      0.05
+  keep branches:      false
+
+Additional options:
+  verbosity:        very low
+  threads:          2/4
+  RNG seed:         12345
+  subtree repeats:  enabled
+--------------------------------------------------------------------------------
+
+BIC       model              K            lnL          score          delta    weight
+--------------------------------------------------------------------------------
+       1  TrN+G4             6     -1726.3442      5815.7318         0.0000    0.3594
+       2  TrN+I+G4           7     -1723.8566      5816.6202         0.8884    0.2305
+       3  HKY+I+G4           6     -1727.2262      5817.4957         1.7639    0.1488
+       4  HKY+G4             5     -1731.2988      5819.7773         4.0455    0.0476
+       5  TIM3+G4            7     -1725.7093      5820.3255         4.5937    0.0362
+       6  TrN+I              6     -1728.8091      5820.6615         4.9297    0.0306
+       7  TIM2+I+G4          8     -1722.9995      5820.7697         5.0378    0.0290
+       8  TIM2+G4            7     -1725.9674      5820.8419         5.1100    0.0279
+       9  TIM1+G4            7     -1726.3707      5821.6484         5.9166    0.0187
+      10  TIM1+I+G4          8     -1723.7001      5822.1708         6.4390    0.0144
+--------------------------------------------------------------------------------
+Best model according to BIC
+---------------------------
+Model:              TrN+G4
+lnL:                -1726.3442
+Frequencies:        0.3020 0.1857 0.1247 0.3876
+Subst. Rates:       1.0000 10.9657 1.0000 1.0000 4.5415 1.0000 
+Inv. sites prop:    -
+Gamma shape:        0.2096
+Score:              5815.7318
+Weight:             0.3594
+---------------------------
+Parameter importances
+---------------------------
+P.Inv:              0.0400
+Gamma:              0.4984
+Gamma-Inv:          0.4616
+Frequencies:        1.0000
+---------------------------
+Model averaged estimates
+---------------------------
+P.Inv:              0.5832
+Alpha:              0.2107
+Alpha-P.Inv:        1.2696
+P.Inv-Alpha:        0.5192
+Frequencies:        0.3087 0.1796 0.1269 0.3847 
+
+Commands:
+  > phyml  -i D:\stuff\cluster\id_worms\even_more\goodbs\no_outgroup\no_outgroup.fas -m 010020 -f m -v 0 -a e -c 4 -o tlr
+  > raxmlHPC-SSE3 -s D:\stuff\cluster\id_worms\even_more\goodbs\no_outgroup\no_outgroup.fas -m GTRGAMMAX -n EXEC_NAME -p PARSIMONY_SEED
+  > raxml-ng --msa D:\stuff\cluster\id_worms\even_more\goodbs\no_outgroup\no_outgroup.fas --model TrN+G4
+  > paup -s D:\stuff\cluster\id_worms\even_more\goodbs\no_outgroup\no_outgroup.fas
+  > iqtree -s D:\stuff\cluster\id_worms\even_more\goodbs\no_outgroup\no_outgroup.fas -m TrN+G4
+
+AIC       model              K            lnL          score          delta    weight
+--------------------------------------------------------------------------------
+       1  TrN+I+G4           7     -1723.8566      4255.7132         0.0000    0.2646
+       2  TIM2+I+G4          8     -1722.9995      4255.9990         0.2858    0.2293
+       3  TIM1+I+G4          8     -1723.7001      4257.4001         1.6869    0.1138
+       4  TIM3+I+G4          8     -1723.7057      4257.4115         1.6983    0.1132
+       5  TrN+G4             6     -1726.3442      4258.6885         2.9752    0.0598
+       6  GTR+I+G4          10     -1722.5882      4259.1765         3.4633    0.0468
+       7  TIM3+G4            7     -1725.7093      4259.4185         3.7053    0.0415
+       8  TIM2+G4            7     -1725.9674      4259.9349         4.2216    0.0320
+       9  HKY+I+G4           6     -1727.2262      4260.4523         4.7391    0.0247
+      10  TIM1+G4            7     -1726.3707      4260.7414         5.0282    0.0214
+--------------------------------------------------------------------------------
+Best model according to AIC
+---------------------------
+Model:              TrN+I+G4
+lnL:                -1723.8566
+Frequencies:        0.3070 0.1804 0.1242 0.3884
+Subst. Rates:       1.0000 11.1807 1.0000 1.0000 5.0713 1.0000 
+Inv. sites prop:    0.5055
+Gamma shape:        1.1701
+Score:              4255.7132
+Weight:             0.2646
+---------------------------
+Parameter importances
+---------------------------
+P.Inv:              0.0120
+Gamma:              0.1661
+Gamma-Inv:          0.8219
+Frequencies:        1.0000
+---------------------------
+Model averaged estimates
+---------------------------
+P.Inv:              0.5850
+Alpha:              0.2115
+Alpha-P.Inv:        1.3666
+P.Inv-Alpha:        0.5238
+Frequencies:        0.3078 0.1810 0.1239 0.3873 
+
+Commands:
+  > phyml  -i D:\stuff\cluster\id_worms\even_more\goodbs\no_outgroup\no_outgroup.fas -m 010020 -f m -v e -a e -c 4 -o tlr
+  > raxmlHPC-SSE3 -s D:\stuff\cluster\id_worms\even_more\goodbs\no_outgroup\no_outgroup.fas -m GTRGAMMAIX -n EXEC_NAME -p PARSIMONY_SEED
+  > raxml-ng --msa D:\stuff\cluster\id_worms\even_more\goodbs\no_outgroup\no_outgroup.fas --model TrN+I+G4
+  > paup -s D:\stuff\cluster\id_worms\even_more\goodbs\no_outgroup\no_outgroup.fas
+  > iqtree -s D:\stuff\cluster\id_worms\even_more\goodbs\no_outgroup\no_outgroup.fas -m TrN+I+G4
+
+AICc      model              K            lnL          score          delta    weight
+--------------------------------------------------------------------------------
+       1  JC                 0     -1906.1247    320618.2495         0.0000    1.0000
+       2  JC+G4              1     -1833.8527    322067.7054      1449.4559    0.0000
+       3  JC+I               1     -1839.3632    322078.7264      1460.4769    0.0000
+       4  K80                1     -1865.0659    322130.1317      1511.8823    0.0000
+       5  K80+G4             2     -1782.3242    323562.6484      2944.3989    0.0000
+       6  K80+I              2     -1790.3729    323578.7457      2960.4963    0.0000
+       7  JC+I+G4            2     -1832.2254    323662.4508      3044.2013    0.0000
+       8  TPM2               2     -1857.4887    323712.9773      3094.7279    0.0000
+       9  TPM3               2     -1857.9854    323713.9709      3095.7214    0.0000
+      10  TPM1               2     -1860.6239    323719.2478      3100.9984    0.0000
+--------------------------------------------------------------------------------
+Best model according to AICc
+---------------------------
+Model:              JC
+lnL:                -1906.1247
+Frequencies:        0.2500 0.2500 0.2500 0.2500
+Subst. Rates:       1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 
+Inv. sites prop:    -
+Gamma shape:        -
+Score:              320618.2495
+Weight:             1.0000
+---------------------------
+Parameter importances
+---------------------------
+P.Inv:              0.0000
+Gamma:              0.0000
+Gamma-Inv:          -
+Frequencies:        -
+---------------------------
+Model averaged estimates
+---------------------------
+P.Inv:              0.5522
+Alpha:              0.3191
+Alpha-P.Inv:        -
+P.Inv-Alpha:        -
+Frequencies:        -
+
+Commands:
+  > phyml  -i D:\stuff\cluster\id_worms\even_more\goodbs\no_outgroup\no_outgroup.fas -m 000000 -f 0.25,0.25,0.25,0.25 -v 0 -a 0 -c 1 -o tlr
+  > raxmlHPC-SSE3 -s D:\stuff\cluster\id_worms\even_more\goodbs\no_outgroup\no_outgroup.fas -c 1 -m GTRCAT --JC69 -n EXEC_NAME -p PARSIMONY_SEED
+  > raxml-ng --msa D:\stuff\cluster\id_worms\even_more\goodbs\no_outgroup\no_outgroup.fas --model JC
+  > paup -s D:\stuff\cluster\id_worms\even_more\goodbs\no_outgroup\no_outgroup.fas
+  > iqtree -s D:\stuff\cluster\id_worms\even_more\goodbs\no_outgroup\no_outgroup.fas -m JC
+Done

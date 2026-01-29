@@ -1,0 +1,15 @@
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf out.vcf
+	--max-missing 0.75
+	--out filtered_mincov
+	--recode
+
+Warning: Expected at least 2 parts in INFO entry: ID=PR,Number=0,Type=Flag,Description="Provisional reference allele, may not be based on real reference genome">
+After filtering, kept 27 out of 27 Individuals
+Outputting VCF file...
+After filtering, kept 1282 out of a possible 96667 Sites
+Run Time = 2.00 seconds
