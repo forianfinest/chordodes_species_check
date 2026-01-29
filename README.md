@@ -8,7 +8,7 @@ Available also at:
 
 https://zenodo.org/records/18415953
 
-Basically, there are all the scripts used for the study, plus some files useful for re-making the analyses and the mamba settings as txt files. It's only missing the Trinity files (too big), which are on Zenodo. Since some files can be around GBs in size, I could not upload everything. If you need more data, let me know.
+Basically, there are all the scripts used for the study, plus some files useful for re-making the analyses and the mamba settings as txt files. It's only missing the Trinity files (too big) and the bootstrap files (too many), which are on Zenodo. Since some files can be around GBs in size, I could not upload everything. If you need more data, let me know.
 
 Abstract:
 
