@@ -20,3 +20,7 @@ maf=0.02
 maxa=2
 
 bcftools view -O v -V indels -q ${maf}:minor -M $maxa --threads 4 genotyped.vcf > mafandmaxall.vcf
+
+###with rna only
+
+bcftools view -O v -V indels -q ${maf}:minor -M $maxa --threads 4 genotyped_rna.vcf > mafandmaxall_rna.vcf
