@@ -44,3 +44,27 @@ GenomeAnalysisTK -Xmx88G -T CombineGVCFs -R ../new_with_trinity.Trinity.fasta --
 --variant SRR25249042.RG.sorted.fix.mate.dedup.after.recall.g.vcf \
 --variant SRR25249043.RG.sorted.fix.mate.dedup.after.recall.g.vcf \
 -o combined.g.vcf
+
+
+###ONLY RNA
+
+GenomeAnalysisTK -Xmx88G -T CombineGVCFs -R ../new_with_trinity.Trinity.fasta --variant SRR25249025.RG.sorted.fix.mate.dedup.after.recall.g.vcf \
+--variant SRR25249026.RG.sorted.fix.mate.dedup.after.recall.g.vcf \
+--variant SRR25249027.RG.sorted.fix.mate.dedup.after.recall.g.vcf \
+--variant SRR25249028.RG.sorted.fix.mate.dedup.after.recall.g.vcf \
+--variant SRR25249029.RG.sorted.fix.mate.dedup.after.recall.g.vcf \
+--variant SRR25249030.RG.sorted.fix.mate.dedup.after.recall.g.vcf \
+--variant SRR25249031.RG.sorted.fix.mate.dedup.after.recall.g.vcf \
+--variant SRR25249032.RG.sorted.fix.mate.dedup.after.recall.g.vcf \
+--variant SRR25249033.RG.sorted.fix.mate.dedup.after.recall.g.vcf \
+--variant SRR25249034.RG.sorted.fix.mate.dedup.after.recall.g.vcf \
+--variant SRR25249035.RG.sorted.fix.mate.dedup.after.recall.g.vcf \
+--variant SRR25249036.RG.sorted.fix.mate.dedup.after.recall.g.vcf \
+--variant SRR25249037.RG.sorted.fix.mate.dedup.after.recall.g.vcf \
+--variant SRR25249038.RG.sorted.fix.mate.dedup.after.recall.g.vcf \
+--variant SRR25249039.RG.sorted.fix.mate.dedup.after.recall.g.vcf \
+--variant SRR25249040.RG.sorted.fix.mate.dedup.after.recall.g.vcf \
+--variant SRR25249041.RG.sorted.fix.mate.dedup.after.recall.g.vcf \
+--variant SRR25249042.RG.sorted.fix.mate.dedup.after.recall.g.vcf \
+--variant SRR25249043.RG.sorted.fix.mate.dedup.after.recall.g.vcf \
+-o combined_rna.g.vcf
