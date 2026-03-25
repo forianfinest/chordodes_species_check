@@ -17,3 +17,7 @@
 mamba activate gatk
 
 GenomeAnalysisTK -Xmx88G -T GenotypeGVCFs -R ../new_with_trinity.Trinity.fasta -V combined.g.vcf -o genotyped.vcf
+
+###ONLY RNA
+
+GenomeAnalysisTK -Xmx88G -T GenotypeGVCFs -R ../new_with_trinity.Trinity.fasta -V combined_rna.g.vcf -o genotyped_rna.vcf
