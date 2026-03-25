@@ -5,3 +5,7 @@
 ./easySFS.py -i all/filtered_mincov.recode.vcf -p lessind/pop.txt --preview -a
 
 ./easySFS.py -i all/filtered_mincov.recode.vcf -p lessind/pop.txt -a --proj=22,16 -o lessind/output_alljapo
+
+###RNA ONLY
+
+./easySFS.py -i filtered_mincov.recode.vcf -p pop.txt -a --proj=16,22 -o all_output
