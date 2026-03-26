@@ -64,3 +64,28 @@ cd ..
 done
 cd ..
 done
+
+
+
+###FOR RNA
+
+
+for i in {1..100}
+do
+mkdir bs$i
+cp $PREFIX.txt bs$i"/"
+cd bs$i
+cat ../header > $PREFIX.bs.$i.vcf
+for r in {1..100}
+do
+cat `shuf -n1 -e ../$PREFIX.sites.*` >> ${PREFIX}.bs.$i.vcf
+done
+/home/eocps010/devivo/fsc/rnaseq/bootstrap/easySFS/ -i ${PREFIX}.bs.$i.vcf -p $PREFIX.txt --proj 16,22 -a
+cd output
+cd fastsimcoal2
+cp ${PREFIX}_jointMAFpop1_0.obs  ${PREFIX}.bs.${i}_oneevent_jointMAFpop1_0.obs
+echo bs$i" ready"
+cd ..
+cd ..
+cd ..
+done
