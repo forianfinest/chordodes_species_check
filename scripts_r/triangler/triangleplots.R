@@ -6,7 +6,7 @@ library(ggpubr)
 ###USE SAME POP USED EARLIER
 
 pop_triangle<-pop
-colnames(pop_triangle)<-c("id",pop)
+colnames(pop_triangle)<-c("id","pop")
 
 pop_triangle2<-pop2
 colnames(pop_triangle2)<-c("id","pop")
