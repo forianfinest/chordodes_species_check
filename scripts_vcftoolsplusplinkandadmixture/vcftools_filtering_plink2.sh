@@ -29,5 +29,15 @@ sed 's/TRINITY_DN\([0-9]*\)_c[0-9]*_g[0-9]*/\1/g' lessind.bim > temp_lessind.bim
 
 mv temp_lessind.bim lessind.bim
 
+###RNA vcf for input admixture
+
+sed 's/^##fileformat=VCFv4.3/##fileformat=VCFv4.2/' filtered_mincov.recode.vcf > filtered_mincov.fourpoint2.vcf
+
+sed 's/TRINITY_DN\([0-9]*\)_c[0-9]*_g[0-9]*_i*/\1/g' foradmixture.bim > temp.bim
+
+mv temp_lessind.bim lessind.bim
+
+
+
 
 
