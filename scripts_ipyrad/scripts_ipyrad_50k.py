@@ -159,8 +159,29 @@ pca32.draw(outfile="mypca_nomore25missing.pdf")
 
 ###VCF WITH ONLY RNA
 
-
 imap = {
+    "POTCF": ["SRR25249025.out.RG.sorted.fix.mate.dedup.bam",
+"SRR25249026.out.RG.sorted.fix.mate.dedup.bam",
+"SRR25249028.out.RG.sorted.fix.mate.dedup.bam",
+"SRR25249030.out.RG.sorted.fix.mate.dedup.bam",
+"SRR25249034.out.RG.sorted.fix.mate.dedup.bam",
+"SRR25249036.out.RG.sorted.fix.mate.dedup.bam",
+"SRR25249037.out.RG.sorted.fix.mate.dedup.bam",
+"SRR25249038.out.RG.sorted.fix.mate.dedup.bam"],
+    "CJPOT": ["SRR25249027.out.RG.sorted.fix.mate.dedup.bam",
+"SRR25249029.out.RG.sorted.fix.mate.dedup.bam",
+"SRR25249031.out.RG.sorted.fix.mate.dedup.bam",
+"SRR25249032.out.RG.sorted.fix.mate.dedup.bam",
+"SRR25249033.out.RG.sorted.fix.mate.dedup.bam",
+"SRR25249035.out.RG.sorted.fix.mate.dedup.bam",
+"SRR25249039.out.RG.sorted.fix.mate.dedup.bam"
+"SRR25249040.out.RG.sorted.fix.mate.dedup.bam",
+"SRR25249041.out.RG.sorted.fix.mate.dedup.bam",
+"SRR25249042.out.RG.sorted.fix.mate.dedup.bam",
+"SRR25249043.out.RG.sorted.fix.mate.dedup.bam"],
+}
+
+###alternate imap = {
     "POTCF": ["SRR25249025.out.RG.sorted.fix.mate.dedup.bam",
 "SRR25249026.out.RG.sorted.fix.mate.dedup.bam",
 "SRR25249028.out.RG.sorted.fix.mate.dedup.bam",
@@ -180,7 +201,7 @@ imap = {
 "SRR25249032.out.RG.sorted.fix.mate.dedup.bam",
 "SRR25249035.out.RG.sorted.fix.mate.dedup.bam",
 "SRR25249039.out.RG.sorted.fix.mate.dedup.bam"],
-}
+}#####
 
 converter = ipa.vcf_to_hdf5(
         name="sofilt",
@@ -203,8 +224,17 @@ pcarna = ipa.pca(
     imap=imap,
     minmap=minmap,
     mincov=0.9,
-    impute_method=3,
+    impute_method=2,
 )
+
+### alternate pcarna = ipa.pca(
+    data=data,
+    imap=imap,
+    minmap=minmap,
+    mincov=0.9,
+    impute_method=3,
+)####
+
 
 pcarna.run(nreplicates=100, seed=123)
 pcarna.draw(0, 2);
