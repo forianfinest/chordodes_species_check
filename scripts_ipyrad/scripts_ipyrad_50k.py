@@ -174,7 +174,7 @@ imap = {
 "SRR25249032.out.RG.sorted.fix.mate.dedup.bam",
 "SRR25249033.out.RG.sorted.fix.mate.dedup.bam",
 "SRR25249035.out.RG.sorted.fix.mate.dedup.bam",
-"SRR25249039.out.RG.sorted.fix.mate.dedup.bam"
+"SRR25249039.out.RG.sorted.fix.mate.dedup.bam",
 "SRR25249040.out.RG.sorted.fix.mate.dedup.bam",
 "SRR25249041.out.RG.sorted.fix.mate.dedup.bam",
 "SRR25249042.out.RG.sorted.fix.mate.dedup.bam",
