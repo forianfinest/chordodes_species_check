@@ -203,7 +203,7 @@ pcarna = ipa.pca(
     imap=imap,
     minmap=minmap,
     mincov=0.9,
-    impute_method=2,
+    impute_method=3,
 )
 
 pcarna.run(nreplicates=100, seed=123)
