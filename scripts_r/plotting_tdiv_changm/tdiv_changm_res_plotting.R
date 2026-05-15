@@ -5,7 +5,7 @@ library(patchwork)
 
 fina_data<-read_csv("fina_data.csv")
 
-tdiv<-fina_data %>% ggplot(mapping=aes(x=VCF,y=CHANGM)) + geom_boxplot() + theme_bw()
+tdiv<-fina_data %>% ggplot(mapping=aes(x=VCF,y=TDIV)) + geom_boxplot() + theme_bw()
 
 changm<-fina_data %>% ggplot(mapping=aes(x=VCF,y=CHANGM)) + geom_boxplot() + theme_bw()
 
