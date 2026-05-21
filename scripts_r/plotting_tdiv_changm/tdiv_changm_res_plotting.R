@@ -3,7 +3,7 @@
 library(tidyverse)
 library(patchwork)
 
-fina_data<-read_csv("fina_data.csv")
+fina_data<-read_csv("supfinadata.csv")
 
 tdiv<-fina_data %>% ggplot(mapping=aes(x=VCF,y=TDIV)) + geom_boxplot() + theme_bw()
 
@@ -11,7 +11,6 @@ changm<-fina_data %>% ggplot(mapping=aes(x=VCF,y=CHANGM)) + geom_boxplot() + the
 
 pdf(file="tochange_boxplot.pdf")
 
-tdiv + changm
-
+tdiv + coord_trans(y = "log10") + theme(text = element_text(size=16), title = element_text(size=20)) + changm + coord_trans(y = "log10") + theme(text = element_text(size=16), title = element_text(size=20)) + plot_annotation(tag_levels = 'A')
 dev.off()
 
