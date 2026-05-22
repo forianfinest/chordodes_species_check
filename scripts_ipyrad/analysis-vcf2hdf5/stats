@@ -1,0 +1,16 @@
+Kmeans clustering: iter=4, K=3, mincov=0.7, minmap={0: 0.7, 1: 0.7, 2: 0.7}
+Samples: 24
+Sites before filtering: 1282
+Filtered (indels): 0
+Filtered (bi-allel): 0
+Filtered (mincov): 0
+Filtered (minmap): 351
+Filtered (subsample invariant): 41
+Filtered (minor allele frequency): 0
+Filtered (combined): 375
+Sites after filtering: 907
+Sites containing missing values: 743 (81.92%)
+Missing values in SNP matrix: 1982 (9.11%)
+SNPs (total): 907
+SNPs (unlinked): 561
+Imputation: 'sampled'; (0, 1, 2) = 89.8%, 9.5%, 0.8%
