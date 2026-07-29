@@ -24,4 +24,4 @@ f=${input_files[$SLURM_ARRAY_TASK_ID]}
 
 
 # Run bam array
-samtools index "$f".sorted.bam -o "$f".indexed.bam
+samtools index "$f".sorted.bam
