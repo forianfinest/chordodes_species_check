@@ -24,4 +24,4 @@ f=${input_files[$SLURM_ARRAY_TASK_ID]}
 
 
 # Run bam array
-java -jar picard.jar FixMateInformation I="$f".sorted.bam O="$f"sorted.fix.mate.bam
+picard FixMateInformation I="$f".sorted.bam O="$f"sorted.fix.mate.bam
